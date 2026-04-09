@@ -1,0 +1,27 @@
+{
+  "pay_full": "$1,799",
+  "pay_plan": "$625/month",
+  "whats_included": [
+    "8 weekly private 1-on-1 coaching sessions with Carol (60 minutes each)",
+    "Worksheets and guided exercises aligned to each week's focus",
+    "Access to six guided sound meditations (frequency-based recordings) — yours to keep",
+    "Direct application to your specific business, your patterns, your blocks"
+  ],
+  "bonus_items": [
+    {
+      "title": "Sacred Six Questions",
+      "value": "$49",
+      "description": "A guided framework for getting to the root of any decision, block, or pattern."
+    },
+    {
+      "title": "Overcome the 7 Saboteurs",
+      "value": "$49",
+      "description": "Identify and begin dismantling the seven internal patterns that most commonly undermine entrepreneurs."
+    },
+    {
+      "title": "The Networking Conversation (ebook)",
+      "value": "$49",
+      "description": "Practical framework for building business relationships that feel natural and actually generate results."
+    }
+  ]
+}

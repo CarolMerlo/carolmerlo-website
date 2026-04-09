@@ -1,2 +1,52 @@
-# Decap CMS Configuration — completed in T1.13
-# Placeholder file to establish the admin/ directory structure
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: assets/images
+public_folder: /assets/images
+
+collections:
+  - name: testimonials
+    label: Testimonials
+    folder: content/testimonials
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Quote, name: quote, widget: text }
+      - { label: Name, name: name, widget: string }
+      - { label: Context, name: context, widget: string, required: false }
+
+  - name: books
+    label: Books
+    folder: content/books
+    create: false
+    extension: json
+    format: json
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Amazon URL, name: amazon_url, widget: string }
+      - { label: Cover Image, name: cover_image, widget: image }
+
+  - name: pages
+    label: Page Content
+    files:
+      - name: pricing
+        label: Pricing
+        file: content/pricing.json
+        fields:
+          - { label: Pay in Full Price, name: pay_full, widget: string }
+          - { label: Payment Plan Price, name: pay_plan, widget: string }
+          - label: "What's Included"
+            name: whats_included
+            widget: list
+            field: { name: item, widget: string }
+          - label: Pay-in-Full Bonus Items
+            name: bonus_items
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Value, name: value, widget: string }
+              - { label: Description, name: description, widget: text }
