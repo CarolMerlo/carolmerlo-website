@@ -1,0 +1,335 @@
+/* =============================================================
+   carolmerlo.com — Page-Specific Styles
+   Homepage sections, shared page layout patterns
+   ============================================================= */
+
+/* -------------------------------------------------------------
+   PAGE HERO (shared pattern)
+   ------------------------------------------------------------- */
+.page-hero {
+  background-color: var(--teal-light);
+  padding: var(--space-lg) 0;
+}
+
+.page-hero h1 {
+  margin-bottom: var(--space-sm);
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — Hero
+   ------------------------------------------------------------- */
+.hero {
+  padding: var(--space-lg) 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(46, 139, 139, 0.15);
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: linear-gradient(135deg, var(--teal-light), var(--teal));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.hero-content h1 {
+  font-size: 2.75rem;
+  margin-bottom: var(--space-sm);
+}
+
+.hero-content .hero-lead {
+  font-size: 1.15rem;
+  color: var(--text-mid);
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+.hero-credentials {
+  font-size: 0.875rem;
+  color: var(--text-soft);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .hero-image {
+    order: -1;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — Who This Is For
+   ------------------------------------------------------------- */
+.who-for {
+  background-color: var(--teal-light);
+}
+
+.who-for-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.who-for-inner h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.who-for-inner p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — Why Change Stalls
+   ------------------------------------------------------------- */
+.why-stalls .grid-2 {
+  gap: var(--space-lg);
+}
+
+.why-stalls-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.why-stalls-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — FIRE Formula
+   ------------------------------------------------------------- */
+.fire-formula {
+  background-color: var(--teal-light);
+  text-align: center;
+}
+
+.fire-formula-gif {
+  max-width: 500px;
+  margin: var(--space-md) auto 0;
+}
+
+.fire-formula-gif img {
+  width: 100%;
+  height: auto;
+}
+
+.fire-formula-gif-placeholder {
+  width: 100%;
+  max-width: 500px;
+  margin: var(--space-md) auto 0;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--gold), var(--teal));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.fire-letters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  text-align: left;
+}
+
+.fire-letter {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm);
+  border-top: 3px solid var(--gold);
+}
+
+.fire-letter-initial {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+}
+
+.fire-letter-word {
+  font-weight: 600;
+  color: var(--teal);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-xs);
+}
+
+.fire-letter p {
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .fire-letters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .fire-letters {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — Two Pathways
+   ------------------------------------------------------------- */
+.pathways {
+  padding: var(--space-lg) 0;
+}
+
+.pathways-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.pathway-card {
+  background-color: var(--teal-light);
+  border-radius: 8px;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.pathway-card h3 {
+  margin-bottom: 0;
+}
+
+.pathway-card p {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .pathways-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — My Books
+   ------------------------------------------------------------- */
+.books-preview {
+  background-color: var(--teal-light);
+}
+
+.books-preview-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — About Me preview
+   ------------------------------------------------------------- */
+.about-preview {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------
+   HOMEPAGE — The Invitation (closing CTA)
+   ------------------------------------------------------------- */
+.invitation {
+  background-color: var(--teal-dark);
+  text-align: center;
+}
+
+.invitation h2 {
+  color: var(--white);
+  font-size: 2.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.invitation p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto var(--space-md);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .invitation h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* -------------------------------------------------------------
+   SECTION INTRO (reusable label + heading pattern)
+   ------------------------------------------------------------- */
+.section-intro {
+  margin-bottom: var(--space-md);
+}
+
+.section-intro h2 {
+  margin-bottom: var(--space-xs);
+}
+
+.section-intro p {
+  font-size: 1.05rem;
+  max-width: 680px;
+}
+
+/* -------------------------------------------------------------
+   IMAGE PLACEHOLDER (dev-mode helper)
+   ------------------------------------------------------------- */
+.img-placeholder {
+  background-color: var(--teal-light);
+  border: 2px dashed var(--teal);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal);
+  font-size: 0.8rem;
+  font-style: italic;
+  min-height: 200px;
+}

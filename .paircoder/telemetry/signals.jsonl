@@ -1,0 +1,1 @@
+{"signal_type": "api_failure", "severity": "warning", "timestamp": "2026-04-09T02:04:21.918145+00:00", "session_id": "", "payload": {"stop_reason": "subagent_stop", "error_detail": "StopFailure hook triggered"}, "source": "automated"}

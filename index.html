@@ -11,11 +11,47 @@
   <meta property="og:image" content="https://carolmerlo.com/assets/images/carol-primary.webp">
   <meta property="og:url" content="https://carolmerlo.com/">
   <meta property="og:type" content="website">
+
+  <!-- Schema: Person + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Carol Merlo",
+        "honorificSuffix": "M.Ed.",
+        "jobTitle": "Transformational Coach, Licensed Spiritual Practitioner",
+        "description": "Carol Merlo, M.Ed. is a transformational coach, licensed spiritual practitioner, and author of five books on conscious entrepreneurship, meditation, and personal transformation.",
+        "url": "https://carolmerlo.com",
+        "image": "https://carolmerlo.com/assets/images/carol-primary.webp",
+        "sameAs": [
+          "https://www.facebook.com/carolmerlo",
+          "https://www.linkedin.com/in/carolmerlo",
+          "https://www.youtube.com/@carolmerlo",
+          "https://www.instagram.com/carolmerlo"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Carol Merlo Coaching",
+        "description": "Spiritual and business coaching for conscious entrepreneurs. The FIRE Formula.",
+        "url": "https://carolmerlo.com",
+        "image": "https://carolmerlo.com/assets/images/carol-primary.webp",
+        "areaServed": ["Dallas, TX", "Online"],
+        "founder": { "@type": "Person", "name": "Carol Merlo" }
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/nav.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
 </head>
 <body>
 
+  <!-- NAVIGATION -->
   <header class="site-header">
     <nav class="nav-inner" aria-label="Main navigation">
       <a href="/" class="nav-logo">Carol Merlo</a>
@@ -39,19 +75,225 @@
     </nav>
   </header>
 
-  <!-- HOMEPAGE CONTENT — built in T1.4 -->
   <main id="main-content">
-    <!-- Hero -->
-    <!-- Who This Is For -->
-    <!-- Why Change Stalls -->
-    <!-- FIRE Formula -->
-    <!-- Two Pathways -->
-    <!-- Testimonials -->
-    <!-- My Books -->
-    <!-- About Me -->
-    <!-- The Invitation -->
+
+    <!-- =========================================================
+         1. HERO
+         ========================================================= -->
+    <section class="hero section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-image">
+            <!-- Replace src with carol-primary.webp when image is added -->
+            <div class="hero-image-placeholder" aria-hidden="true">Photo coming</div>
+            <!-- LIVE VERSION (uncomment when image added):
+            <img src="/assets/images/carol-primary.webp"
+                 alt="Carol Merlo, transformational coach and licensed spiritual practitioner"
+                 width="500" height="667">
+            -->
+          </div>
+          <div class="hero-content">
+            <span class="label-gold">Transformational Coaching</span>
+            <h1>You already know something needs to shift.</h1>
+            <p class="hero-lead">Maybe you've done the work — the journeys, the courses, the planning. And yet something keeps pulling against you.</p>
+            <p class="hero-lead">Carol Merlo is a transformational coach, author, and licensed spiritual practitioner who works with the inner alignment that makes outer success not just possible — but sustainable.</p>
+            <p class="hero-credentials">Carol Merlo, M.Ed. &nbsp;·&nbsp; Licensed Spiritual Practitioner &nbsp;·&nbsp; Dallas &amp; Online</p>
+            <a href="https://calendly.com/carol-merlo/insight-call-with-carol" class="btn btn-primary" target="_blank" rel="noopener">Schedule a Complimentary Insight Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. WHO THIS IS FOR
+         ========================================================= -->
+    <section class="who-for section">
+      <div class="container">
+        <div class="who-for-inner">
+          <span class="label-gold">Is This You?</span>
+          <h2>Who This Is For</h2>
+          <p>This work is for you if you're someone who thinks deeply, cares about living with integrity, and knows there's more available to you — but keeps running into the same invisible walls.</p>
+          <p>You're not lacking information, willpower, or intention. What's working against you lives underneath those things. That's what this work addresses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. WHY CHANGE STALLS
+         ========================================================= -->
+    <section class="why-stalls section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="why-stalls-content">
+            <span class="label-gold">The Real Obstacle</span>
+            <h2>Why Change Stalls</h2>
+            <p>Most people don't resist change consciously. They genuinely want things to be different. What stops them is usually invisible.</p>
+            <p>Inner beliefs and emotional patterns shape what's possible. When inner structures conflict — even with present intention and understanding — forward movement becomes difficult. Not impossible. Just harder than it needs to be.</p>
+            <p>The work isn't about trying harder. It's about removing what's working against you.</p>
+          </div>
+          <div class="why-stalls-image">
+            <!-- Replace src with tree-in-water-teal.webp when image is added -->
+            <div class="why-stalls-image-placeholder" aria-hidden="true">Teal water image coming</div>
+            <!-- LIVE VERSION (uncomment when image added):
+            <img src="/assets/images/tree-in-water-teal.webp"
+                 alt="Peaceful teal water reflecting a tree — stillness and clarity"
+                 width="600" height="450">
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. FIRE FORMULA
+         ========================================================= -->
+    <section class="fire-formula section">
+      <div class="container">
+        <span class="label-gold">The Framework</span>
+        <h2>The FIRE Formula</h2>
+        <p>Four dimensions of inner and outer alignment. When they work together, results that felt elusive become natural.</p>
+
+        <!-- FIRE Formula GIF -->
+        <div class="fire-formula-gif">
+          <!-- Replace with img tag when fire-formula.gif is added -->
+          <div class="fire-formula-gif-placeholder" aria-hidden="true">FIRE Formula GIF coming</div>
+          <!-- LIVE VERSION (uncomment when image added):
+          <img src="/assets/images/fire-formula.gif"
+               alt="The FIRE Formula: Focus, Ignition, Relationships, Execution"
+               width="500" height="500">
+          -->
+        </div>
+
+        <div class="fire-letters">
+          <div class="fire-letter">
+            <div class="fire-letter-initial">F</div>
+            <div class="fire-letter-word">Focus</div>
+            <p>When attention is scattered or internally conflicted, no amount of planning resolves it. Focus work clarifies what you're actually moving toward and why it matters.</p>
+          </div>
+          <div class="fire-letter">
+            <div class="fire-letter-initial">I</div>
+            <div class="fire-letter-word">Ignition</div>
+            <p>Addresses resistance between knowing and doing — uncovering what's blocking your natural energy so momentum builds from the inside out.</p>
+          </div>
+          <div class="fire-letter">
+            <div class="fire-letter-initial">R</div>
+            <div class="fire-letter-word">Relationships</div>
+            <p>Relationships shape nearly every outcome in your life. This dimension examines the patterns and beliefs that determine how you show up, what you allow in, and what you unconsciously push away.</p>
+          </div>
+          <div class="fire-letter">
+            <div class="fire-letter-initial">E</div>
+            <div class="fire-letter-word">Execution</div>
+            <p>The natural result when the first three elements are coherent. Action becomes less effortful because it's no longer working against anything.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. TWO PATHWAYS
+         ========================================================= -->
+    <section class="pathways section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="label-gold">Where Would You Like to Begin?</span>
+          <h2>Two Ways to Work Together</h2>
+        </div>
+        <div class="pathways-grid">
+          <div class="pathway-card">
+            <h3>Spiritual Coaching</h3>
+            <p>For the moments when life feels heavy, stuck, or disconnected. When you know something needs to shift but you're not sure what or how. This is quiet, deep, grounding work.</p>
+            <a href="/work-with-me/" class="btn btn-secondary">Learn More</a>
+          </div>
+          <div class="pathway-card">
+            <h3>Business Coaching</h3>
+            <p>For the entrepreneur whose outer results keep running into an inner ceiling. This work combines deep personal work with the practical realities of building something meaningful.</p>
+            <a href="/work-with-me/" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. TESTIMONIALS
+         ========================================================= -->
+    <section class="section bg-teal-light">
+      <div class="container">
+        <div class="section-intro text-center">
+          <span class="label-gold">What Clients Say</span>
+          <h2>Results That Speak</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <blockquote>"Carol truly gets into the nitty-gritty of building a successful business. She doesn't just stay on the surface — she dives deep, which naturally encourages you to dive deep as well."</blockquote>
+            <cite>— Susie Parker</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"I would become emotionally entangled in the problem. Thanks to the coaching I received from Carol, I am much more relaxed when my friends call to vent or ask advice."</blockquote>
+            <cite>— Jerry Kuban</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"She's effective and efficient in helping me help myself in accomplishing the goals I set for myself. In addition, she helps me clarify my goals for myself."</blockquote>
+            <cite>— Jim Berrong</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"She was able to help me dig deep and find clarity in my purpose and goals and the blueprint to make it happen."</blockquote>
+            <cite>— Daniel Jackson</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"She helped me gain valuable insights and apply them to my life in meaningful ways."</blockquote>
+            <cite>— Leah Shafer</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"I learned to recognize my spiritual health even through physical illness during one of the hardest seasons of my life. Carol held the space for that shift."</blockquote>
+            <cite>— Ty Schauster</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. MY BOOKS
+         ========================================================= -->
+    <section class="books-preview section">
+      <div class="container">
+        <div class="books-preview-inner">
+          <span class="label-gold">The Books</span>
+          <h2>My Books</h2>
+          <p>Five books covering conscious entrepreneurship, meditation, the FIRE Formula, and personal transformation. Each one is a framework you can work with on your own.</p>
+          <a href="/books/" class="btn btn-secondary">View All Books</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. ABOUT ME PREVIEW
+         ========================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="about-preview">
+          <span class="label-gold">About Carol</span>
+          <h2>Thirty Years of Studying What Actually Creates Change</h2>
+          <p>I've spent more than thirty years studying what actually creates change — not the kind that lasts a week, but the kind that reorganizes how you see yourself and what you believe is possible.</p>
+          <p>My background spans adult education, consciousness studies, spiritual practice, and entrepreneurship — grounded in a Master's in Education and credentials as a licensed spiritual practitioner.</p>
+          <a href="/about/" class="btn btn-secondary">My Full Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. THE INVITATION
+         ========================================================= -->
+    <section class="invitation section">
+      <div class="container">
+        <h2>Ready to Begin?</h2>
+        <p>If something in you is ready, that's enough to begin. Transformation doesn't require certainty. It requires willingness. If you've read this far and something feels familiar — that quiet recognition that this might be what you've been looking for — I'd love to connect.</p>
+        <a href="https://calendly.com/carol-merlo/insight-call-with-carol" class="btn btn-primary" target="_blank" rel="noopener">Schedule a Complimentary Insight Call</a>
+      </div>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-col">
