@@ -319,6 +319,48 @@
 }
 
 /* -------------------------------------------------------------
+   ABOUT PAGE
+   ------------------------------------------------------------- */
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.about-hero-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(46, 139, 139, 0.15);
+}
+
+.about-credentials {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+}
+
+.about-body {
+  max-width: 780px;
+}
+
+.about-body h2 {
+  margin-bottom: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-image {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* -------------------------------------------------------------
    IMAGE PLACEHOLDER (dev-mode helper)
    ------------------------------------------------------------- */
 .img-placeholder {
