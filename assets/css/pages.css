@@ -552,6 +552,58 @@
 }
 
 /* -------------------------------------------------------------
+   BOOKS PAGE
+   ------------------------------------------------------------- */
+.books-intro {
+  max-width: 780px;
+}
+
+.books-section-heading {
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--teal);
+}
+
+.book-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-md);
+  align-items: start;
+  margin-bottom: var(--space-lg);
+}
+
+.book-row:last-child {
+  margin-bottom: 0;
+}
+
+.book-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.book-details h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.book-details p {
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+@media (max-width: 600px) {
+  .book-row {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    max-width: 180px;
+  }
+}
+
+/* -------------------------------------------------------------
    IMAGE PLACEHOLDER (dev-mode helper)
    ------------------------------------------------------------- */
 .img-placeholder {
