@@ -754,6 +754,84 @@
 }
 
 /* -------------------------------------------------------------
+   CONTACT PAGE
+   ------------------------------------------------------------- */
+.contact-intro {
+  max-width: 680px;
+}
+
+.contact-body {
+  max-width: 600px;
+}
+
+.contact-body h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: var(--white);
+  transition: border-color 0.2s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.contact-social {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-top: var(--space-xs);
+}
+
+.contact-social-link {
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid var(--teal);
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.contact-social-link:hover {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+/* -------------------------------------------------------------
    IMAGE PLACEHOLDER (dev-mode helper)
    ------------------------------------------------------------- */
 .img-placeholder {
