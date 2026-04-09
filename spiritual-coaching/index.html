@@ -11,22 +11,68 @@
   <meta property="og:url" content="https://carolmerlo.com/spiritual-coaching/">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
 </head>
 <body>
 
-  <header id="site-header"></header>
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="/" class="nav-logo">Carol Merlo</a>
+      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Work With Me</button>
+          <ul class="nav-dropdown-menu" role="menu">
+            <li><a href="/spiritual-coaching/">Spiritual Coaching</a></li>
+            <li><a href="/business-coaching/">Business Coaching</a></li>
+          </ul>
+        </li>
+        <li><a href="/books/">Books</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- SPIRITUAL COACHING CONTENT — built in T1.8 -->
   <main id="main-content">
-    <!-- Headline: 1-on-1 Spiritual Coaching with Carol Merlo -->
-    <!-- Opening: witness framing, 15 years, psychology background -->
-    <!-- What Happens in a Session -->
-    <!-- This Work Is Right For You If (6 bullets) -->
-    <!-- Testimonials (7 cards) -->
-    <!-- Closing CTA: Insight Call -->
   </main>
 
-  <footer id="site-footer"></footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="/" class="footer-brand">Carol Merlo</a>
+        <p class="footer-tagline">Transformational Coaching for<br>Conscious Entrepreneurs</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Pages</p>
+        <ul class="footer-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/work-with-me/">Work With Me</a></li>
+          <li><a href="/books/">Books</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Connect</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Carol Merlo. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="/assets/js/main.js"></script>
 </body>

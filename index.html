@@ -6,18 +6,38 @@
   <title>Transformational Coaching | Carol Merlo, M.Ed. | Spiritual &amp; Business Coaching</title>
   <meta name="description" content="Carol Merlo helps conscious entrepreneurs and individuals align their inner world with real-world results. Spiritual coaching, business coaching, and the FIRE Formula.">
   <link rel="canonical" href="https://carolmerlo.com/">
-  <!-- Open Graph -->
   <meta property="og:title" content="Transformational Coaching | Carol Merlo, M.Ed.">
   <meta property="og:description" content="Carol Merlo helps conscious entrepreneurs and individuals align their inner world with real-world results. Spiritual coaching, business coaching, and the FIRE Formula.">
   <meta property="og:image" content="https://carolmerlo.com/assets/images/carol-primary.webp">
   <meta property="og:url" content="https://carolmerlo.com/">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
 </head>
 <body>
 
-  <!-- NAVIGATION — built in T1.3 -->
-  <header id="site-header"></header>
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="/" class="nav-logo">Carol Merlo</a>
+      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Work With Me</button>
+          <ul class="nav-dropdown-menu" role="menu">
+            <li><a href="/spiritual-coaching/">Spiritual Coaching</a></li>
+            <li><a href="/business-coaching/">Business Coaching</a></li>
+          </ul>
+        </li>
+        <li><a href="/books/">Books</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- HOMEPAGE CONTENT — built in T1.4 -->
   <main id="main-content">
@@ -32,8 +52,37 @@
     <!-- The Invitation -->
   </main>
 
-  <!-- FOOTER — built in T1.3 -->
-  <footer id="site-footer"></footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="/" class="footer-brand">Carol Merlo</a>
+        <p class="footer-tagline">Transformational Coaching for<br>Conscious Entrepreneurs</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Pages</p>
+        <ul class="footer-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/work-with-me/">Work With Me</a></li>
+          <li><a href="/books/">Books</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Connect</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Carol Merlo. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="/assets/js/main.js"></script>
 </body>
