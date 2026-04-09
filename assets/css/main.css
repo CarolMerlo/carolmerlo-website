@@ -1,0 +1,290 @@
+/* =============================================================
+   carolmerlo.com — Main Stylesheet
+   Design system: brand colors, typography, layout, components
+   ============================================================= */
+
+/* -------------------------------------------------------------
+   1. CSS VARIABLES (Design Tokens)
+   ------------------------------------------------------------- */
+:root {
+  /* Brand colors */
+  --teal:        #2E8B8B;
+  --teal-dark:   #1A5F5F;
+  --gold:        #C9A84C;
+  --teal-light:  #E8F5F5;
+
+  /* Text */
+  --text-dark:   #2C2C2C;
+  --text-mid:    #555555;
+  --text-soft:   #777777;
+  --white:       #FFFFFF;
+
+  /* Typography */
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body:    Arial, Inter, sans-serif;
+
+  /* Spacing scale */
+  --space-xs:    0.5rem;
+  --space-sm:    1rem;
+  --space-md:    2rem;
+  --space-lg:    4rem;
+  --space-xl:    8rem;
+
+  /* Layout */
+  --max-width:     1100px;
+  --border-radius: 4px;
+}
+
+/* -------------------------------------------------------------
+   2. RESET
+   ------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* -------------------------------------------------------------
+   3. TYPOGRAPHY
+   ------------------------------------------------------------- */
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--teal);
+  line-height: 1.25;
+  margin-bottom: var(--space-sm);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+p {
+  color: var(--text-mid);
+  margin-bottom: var(--space-sm);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.625rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.375rem; }
+  h3 { font-size: 1.125rem; }
+}
+
+/* -------------------------------------------------------------
+   4. LAYOUT — Container
+   ------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+}
+
+/* Section spacing */
+.section {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+  }
+}
+
+/* Two-column grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------------------
+   5. BUTTONS
+   ------------------------------------------------------------- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--border-radius);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  border: 2px solid transparent;
+}
+
+/* Primary — teal fill */
+.btn-primary {
+  background-color: var(--teal);
+  color: var(--white);
+  border-color: var(--teal);
+}
+
+.btn-primary:hover {
+  background-color: var(--teal-dark);
+  border-color: var(--teal-dark);
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* Secondary — gold outline */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.btn-secondary:hover {
+  background-color: var(--gold);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------
+   6. TESTIMONIAL CARD
+   ------------------------------------------------------------- */
+.testimonial-card {
+  background-color: var(--teal-light);
+  border-left: 4px solid var(--gold);
+  padding: var(--space-md);
+  border-radius: var(--border-radius);
+}
+
+.testimonial-card blockquote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-xs);
+}
+
+.testimonial-card cite {
+  display: block;
+  font-style: normal;
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Testimonial grid */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------------------
+   7. UTILITY CLASSES
+   ------------------------------------------------------------- */
+
+/* Screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Background variants */
+.bg-teal-light { background-color: var(--teal-light); }
+.bg-teal-dark  { background-color: var(--teal-dark); color: var(--white); }
+.bg-teal-dark h1,
+.bg-teal-dark h2,
+.bg-teal-dark h3 { color: var(--white); }
+.bg-teal-dark p  { color: rgba(255,255,255,0.9); }
+
+/* Text alignment */
+.text-center { text-align: center; }
+
+/* Gold accent label */
+.label-gold {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
