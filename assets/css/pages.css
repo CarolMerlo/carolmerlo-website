@@ -319,6 +319,45 @@
 }
 
 /* -------------------------------------------------------------
+   WORK WITH ME PAGE
+   ------------------------------------------------------------- */
+.work-with-me-intro {
+  max-width: 780px;
+}
+
+.work-with-me-lead {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.insight-call-line {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--teal-light);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.insight-call-line p {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-mid);
+}
+
+@media (max-width: 480px) {
+  .insight-call-line {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* -------------------------------------------------------------
    ABOUT PAGE
    ------------------------------------------------------------- */
 .about-hero-grid {
