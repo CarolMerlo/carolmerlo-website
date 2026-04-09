@@ -400,6 +400,115 @@
 }
 
 /* -------------------------------------------------------------
+   BUSINESS COACHING PAGE
+   ------------------------------------------------------------- */
+.bc-lead {
+  font-size: 1.15rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  max-width: 780px;
+  margin-bottom: var(--space-sm);
+}
+
+.bc-body {
+  max-width: 780px;
+}
+
+.bc-body h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.bc-phases {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-sm) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.bc-phases li {
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--teal-light);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.weeks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.week-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm);
+  border-top: 3px solid var(--teal);
+}
+
+.week-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  margin-bottom: var(--space-xs);
+}
+
+.week-card h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.week-card p {
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  margin: 0;
+}
+
+.bc-book-section {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.bc-book-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(46, 139, 139, 0.15);
+}
+
+.bc-book-content h2 {
+  margin-bottom: var(--space-sm);
+}
+
+@media (max-width: 900px) {
+  .weeks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bc-book-section {
+    grid-template-columns: 1fr;
+  }
+
+  .bc-book-image {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .weeks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------------------
    IMAGE PLACEHOLDER (dev-mode helper)
    ------------------------------------------------------------- */
 .img-placeholder {
