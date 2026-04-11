@@ -55,6 +55,8 @@ Sprint 2 planned. 5 tasks: hero banner, YouTube link, Mailchimp popup, GA4 fixes
 
 ## What Was Just Done
 
+- **T2.1 done** (auto-updated by hook)
+
 ### Session: 2026-04-11 — T2.1 Complete
 
 - Pulled `beautiful-background.jpg` from GitHub (uploaded by Carol), renamed to remove space in filename
