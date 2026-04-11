@@ -35,6 +35,8 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/nav.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
+  <!-- Preconnect for GA4 -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <!-- Google Analytics 4 | G-PL27Q84J9J -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PL27Q84J9J"></script>
   <script>
@@ -78,7 +80,8 @@
           <div class="about-hero-image">
             <img src="/assets/images/carol-about.webp"
                  alt="Carol Merlo, transformational coach and licensed spiritual practitioner"
-                 width="400" height="533">
+                 width="400" height="533"
+                 fetchpriority="high" loading="eager">
           </div>
           <div class="about-hero-content">
             <span class="label-gold">About Carol</span>
@@ -224,7 +227,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <script>document.write(new Date().getFullYear())</script> Carol Merlo. All rights reserved.</p>
+      <p>&copy; <span id="copyright-year">2026</span> Carol Merlo. All rights reserved.</p>
     </div>
   </footer>
 
