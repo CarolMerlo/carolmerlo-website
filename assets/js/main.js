@@ -18,6 +18,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* GA4: Calendly CTA clicks (all pages) */
+  document.querySelectorAll('a[href*="calendly.com"]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'calendly_click', { link_text: el.textContent.trim() });
+      }
+    });
+  });
+
+  /* GA4: Contact form submission */
+  var contactForm = document.querySelector('form[name="contact"]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'contact_form_submit');
+      }
+    });
+  }
+
+  /* GA4: Amazon book link clicks */
+  document.querySelectorAll('a[href*="amazon.com"]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'book_link_click', { link_text: el.textContent.trim() });
+      }
+    });
+  });
+
   /* -----------------------------------------------------------
      Mobile Navigation Toggle (hamburger)
      ----------------------------------------------------------- */
