@@ -4,6 +4,37 @@
    ============================================================= */
 
 /* -------------------------------------------------------------
+   HERO BANNER (homepage full-width image banner)
+   ------------------------------------------------------------- */
+.hero-banner {
+  background-image: url('/assets/images/beautiful-background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner-content {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.hero-banner-text {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--white);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 600px) {
+  .hero-banner { min-height: 260px; }
+}
+
+/* -------------------------------------------------------------
    PAGE HERO (shared pattern)
    ------------------------------------------------------------- */
 .page-hero {
