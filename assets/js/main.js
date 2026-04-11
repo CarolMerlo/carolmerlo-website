@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const yearEl = document.getElementById('copyright-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* GA4: FIRE Formula video link click */
+  document.querySelectorAll('.fire-formula-link').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'video_play', { video_title: 'FIRE Formula' });
+      }
+    });
+  });
+
   /* -----------------------------------------------------------
      Mobile Navigation Toggle (hamburger)
      ----------------------------------------------------------- */

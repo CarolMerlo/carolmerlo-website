@@ -183,6 +183,26 @@
   height: auto;
 }
 
+.fire-formula-link {
+  display: block;
+  text-decoration: none;
+}
+
+.fire-formula-watch {
+  display: block;
+  text-align: center;
+  margin-top: var(--space-xs);
+  color: var(--teal-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+.fire-formula-link:hover .fire-formula-watch {
+  color: var(--teal-darker);
+  text-decoration: underline;
+}
+
 .fire-formula-gif-placeholder {
   width: 100%;
   max-width: 500px;

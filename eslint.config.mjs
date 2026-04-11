@@ -7,7 +7,8 @@ export default [
       ecmaVersion: 2020,
       sourceType: "script",
       globals: {
-        ...globals.browser
+        ...globals.browser,
+        gtag: "readonly"
       }
     },
     rules: {
