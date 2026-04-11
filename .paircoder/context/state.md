@@ -43,6 +43,20 @@ Phase 1 plan created. 15 tasks spanning the full site build from pre-build check
 
 ## What Was Just Done
 
+### Session: 2026-04-11 — Post-T1.14 Polish & CI
+
+- Schema sameAs URLs corrected to match real social handles (CarolMerloCoaching, carolmerlocoaching)
+- Social media footer links updated across all 9 pages (placeholder # → real URLs)
+- WCAG contrast fixes: btn-primary, label-gold, nav-logo, footer-heading, hero-credentials, fire-letter-word
+- Hardcoded hex colors extracted to CSS variables (--gold-accessible, --teal-darker, --white-soft)
+- admin/index.html fixed: Netlify Identity widget moved before Decap CMS; version pinned to 3.3.3
+- Contact form honeypot: switched from hidden input to CSS-hidden visible input (proper Netlify honeypot)
+- GitHub Actions CI pipeline added (.github/workflows/ci.yml):
+  - Job 1: html-validate + stylelint + eslint (runs on every push/PR)
+  - Job 2: Lighthouse CI desktop on /, /business-coaching/, /spiritual-coaching/ (accessibility/SEO ≥ 90)
+- AGENTS.md created; bpsai-pair validate passes
+- All changes committed and pushed to master; Netlify deploying
+
 - **T1.14 done** (auto-updated by hook)
 
 - **T1.13 done** (auto-updated by hook)
