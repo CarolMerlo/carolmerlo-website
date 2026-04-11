@@ -30,7 +30,7 @@
 .nav-logo {
   font-family: var(--font-heading);
   font-size: 1.4rem;
-  color: var(--teal);
+  color: var(--teal-dark);
   text-decoration: none;
   font-weight: normal;
   white-space: nowrap;
@@ -279,7 +279,7 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--gold);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: var(--space-xs);
 }
 

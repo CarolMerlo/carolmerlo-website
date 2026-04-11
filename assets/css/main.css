@@ -177,16 +177,16 @@ p:last-child {
   border: 2px solid transparent;
 }
 
-/* Primary — teal fill */
+/* Primary — teal-dark fill, white text (7.2:1 — passes WCAG AA) */
 .btn-primary {
-  background-color: var(--teal);
+  background-color: var(--teal-dark);
   color: var(--white);
-  border-color: var(--teal);
+  border-color: var(--teal-dark);
 }
 
 .btn-primary:hover {
-  background-color: var(--teal-dark);
-  border-color: var(--teal-dark);
+  background-color: #0F3A3A;
+  border-color: #0F3A3A;
   text-decoration: none;
   color: var(--white);
 }
@@ -280,9 +280,9 @@ p:last-child {
 /* Text alignment */
 .text-center { text-align: center; }
 
-/* Gold accent label */
+/* Gold accent label — #8B6000 passes WCAG AA on white and teal-light */
 .label-gold {
-  color: var(--gold);
+  color: #8B6000;
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;

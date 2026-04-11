@@ -45,6 +45,10 @@
   }
   </script>
 
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image" href="/assets/images/carol-primary.png">
+  <!-- Preconnect for GA4 -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/nav.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
@@ -94,7 +98,8 @@
           <div class="hero-image">
             <img src="/assets/images/carol-primary.png"
                  alt="Carol Merlo, transformational coach and licensed spiritual practitioner"
-                 width="500" height="667">
+                 width="500" height="667"
+                 fetchpriority="high" loading="eager">
           </div>
           <div class="hero-content">
             <span class="label-gold">Transformational Coaching</span>
@@ -198,12 +203,12 @@
           <div class="pathway-card">
             <h3>Spiritual Coaching</h3>
             <p>For the moments when life feels heavy, stuck, or disconnected. When you know something needs to shift but you're not sure what or how. This is quiet, deep, grounding work.</p>
-            <a href="/work-with-me/" class="btn btn-secondary">Learn More</a>
+            <a href="/spiritual-coaching/" class="btn btn-secondary">Explore Spiritual Coaching</a>
           </div>
           <div class="pathway-card">
             <h3>Business Coaching</h3>
             <p>For the entrepreneur whose outer results keep running into an inner ceiling. This work combines deep personal work with the practical realities of building something meaningful.</p>
-            <a href="/work-with-me/" class="btn btn-secondary">Learn More</a>
+            <a href="/business-coaching/" class="btn btn-secondary">Explore Business Coaching</a>
           </div>
         </div>
       </div>
@@ -323,6 +328,5 @@
   </footer>
 
   <script src="/assets/js/main.js"></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </body>
 </html>
