@@ -3,11 +3,11 @@
    Handles: mobile nav toggle, dropdown, active nav state
    ============================================================= */
 
-/* Footer copyright year */
-var yearEl = document.getElementById('copyright-year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
-
 document.addEventListener('DOMContentLoaded', function () {
+
+  /* Footer copyright year */
+  const yearEl = document.getElementById('copyright-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /* -----------------------------------------------------------
      Mobile Navigation Toggle (hamburger)

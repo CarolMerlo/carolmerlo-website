@@ -279,7 +279,7 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--white-soft);
   margin-bottom: var(--space-xs);
 }
 

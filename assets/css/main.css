@@ -18,6 +18,11 @@
   --text-mid:    #555555;
   --text-soft:   #777777;
   --white:       #FFFFFF;
+  --white-soft:  rgba(255, 255, 255, 0.85);
+
+  /* Accessible overrides (WCAG AA — cannot use --gold or --teal on white) */
+  --gold-accessible:  #8B6000;  /* 5.5:1 on white/teal-light */
+  --teal-darker:      #0F3A3A;  /* hover on --teal-dark buttons */
 
   /* Typography */
   --font-heading: Georgia, 'Times New Roman', serif;
@@ -185,8 +190,8 @@ p:last-child {
 }
 
 .btn-primary:hover {
-  background-color: #0F3A3A;
-  border-color: #0F3A3A;
+  background-color: var(--teal-darker);
+  border-color: var(--teal-darker);
   text-decoration: none;
   color: var(--white);
 }
@@ -280,9 +285,9 @@ p:last-child {
 /* Text alignment */
 .text-center { text-align: center; }
 
-/* Gold accent label — #8B6000 passes WCAG AA on white and teal-light */
+/* Gold accent label — WCAG AA compliant alternative to --gold */
 .label-gold {
-  color: #8B6000;
+  color: var(--gold-accessible);
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
