@@ -931,6 +931,8 @@
 
 .popup-overlay[hidden] { display: none; }
 
+body.popup-open { overflow: hidden; }
+
 .popup-modal {
   background: var(--white);
   border-radius: 8px;

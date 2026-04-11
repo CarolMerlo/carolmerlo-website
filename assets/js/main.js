@@ -52,15 +52,16 @@ document.addEventListener('DOMContentLoaded', function () {
   (function () {
     var COOKIE = 'cm_popup_seen';
     var DELAY  = 10000;
+    var lastFocus = null;
 
     function getCookie(name) {
       return document.cookie.split('; ').some(function (c) {
-        return c.startsWith(name + '=');
+        return c.indexOf(name + '=') === 0;
       });
     }
     function setCookie(name, days) {
       var exp = new Date(Date.now() + days * 864e5).toUTCString();
-      document.cookie = name + '=1; expires=' + exp + '; path=/';
+      document.cookie = name + '=1; expires=' + exp + '; path=/; Secure; SameSite=Lax';
     }
 
     var popup   = document.getElementById('subscribe-popup');
@@ -68,17 +69,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!popup) return;
 
-    function openPopup() {
+    var closeBtn   = popup.querySelector('.popup-close');
+    var emailInput = popup.querySelector('input[type="email"]');
+
+    function openPopup(fromEl) {
+      lastFocus = fromEl || document.activeElement;
       popup.removeAttribute('hidden');
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add('popup-open');
+      if (emailInput) emailInput.focus();
     }
     function closePopup() {
       popup.setAttribute('hidden', '');
-      document.body.style.overflow = '';
+      document.body.classList.remove('popup-open');
       setCookie(COOKIE, 30);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
     }
 
-    popup.querySelector('.popup-close').addEventListener('click', closePopup);
+    if (closeBtn) closeBtn.addEventListener('click', closePopup);
     popup.addEventListener('click', function (e) {
       if (e.target === popup) closePopup();
     });
@@ -89,14 +96,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (trigger) {
       trigger.addEventListener('click', function (e) {
         e.preventDefault();
-        openPopup();
+        openPopup(trigger);
       });
     }
 
     /* Auto-open on homepage only, once per 30 days */
     var isHomepage = window.location.pathname === '/' || window.location.pathname === '/index.html';
     if (isHomepage && !getCookie(COOKIE)) {
-      setTimeout(openPopup, DELAY);
+      setTimeout(function () { openPopup(null); }, DELAY);
     }
   }());
 
