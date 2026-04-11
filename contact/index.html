@@ -30,13 +30,13 @@
   <header class="site-header">
     <nav class="nav-inner" aria-label="Main navigation">
       <a href="/" class="nav-logo">Carol Merlo</a>
-      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+      <button type="button" class="nav-hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="/">Home</a></li>
         <li class="nav-dropdown">
-          <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Work With Me</button>
+          <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Work With Me</button>
           <ul class="nav-dropdown-menu" role="menu">
             <li><a href="/spiritual-coaching/">Spiritual Coaching</a></li>
             <li><a href="/business-coaching/">Business Coaching</a></li>
@@ -70,7 +70,7 @@
         <h2>Send a Message</h2>
         <p>Prefer to write first? Use the form below and Carol will follow up directly.</p>
         <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <p style="display:none"><label>Do not fill this out: <input name="bot-field"></label></p>
+          <p style="display:none"><label>Do not fill this out: <input type="text" name="bot-field"></label></p>
           <input type="hidden" name="form-name" value="contact">
           <div class="form-field">
             <label for="name">Your name</label>
