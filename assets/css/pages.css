@@ -916,6 +916,108 @@
 }
 
 /* -------------------------------------------------------------
+   EMAIL POPUP (homepage Mailchimp signup modal)
+   ------------------------------------------------------------- */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: var(--space-sm);
+}
+
+.popup-overlay[hidden] { display: none; }
+
+.popup-modal {
+  background: var(--white);
+  border-radius: 8px;
+  padding: var(--space-md);
+  max-width: 440px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-mid);
+  line-height: 1;
+  padding: 4px 8px;
+}
+
+.popup-close:hover { color: var(--text-dark); }
+
+.popup-heading {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--teal-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.popup-subheading {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.popup-note {
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  margin-bottom: var(--space-sm);
+}
+
+.popup-field {
+  margin-bottom: var(--space-xs);
+}
+
+.popup-field input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+.popup-field input:focus {
+  outline: 2px solid var(--teal-dark);
+  outline-offset: 1px;
+  border-color: var(--teal-dark);
+}
+
+.popup-submit {
+  width: 100%;
+  margin-top: var(--space-xs);
+}
+
+.popup-fine-print {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  margin-top: var(--space-xs);
+}
+
+.footer-subscribe-link {
+  display: inline-block;
+  margin-top: var(--space-xs);
+  color: var(--white-soft);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-subscribe-link:hover { color: var(--white); }
+
+/* -------------------------------------------------------------
    IMAGE PLACEHOLDER (dev-mode helper)
    ------------------------------------------------------------- */
 .img-placeholder {

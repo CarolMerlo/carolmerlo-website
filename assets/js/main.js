@@ -47,6 +47,60 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /* -----------------------------------------------------------
+     Email Signup Popup
+     ----------------------------------------------------------- */
+  (function () {
+    var COOKIE = 'cm_popup_seen';
+    var DELAY  = 10000;
+
+    function getCookie(name) {
+      return document.cookie.split('; ').some(function (c) {
+        return c.startsWith(name + '=');
+      });
+    }
+    function setCookie(name, days) {
+      var exp = new Date(Date.now() + days * 864e5).toUTCString();
+      document.cookie = name + '=1; expires=' + exp + '; path=/';
+    }
+
+    var popup   = document.getElementById('subscribe-popup');
+    var trigger = document.getElementById('footer-subscribe-trigger');
+
+    if (!popup) return;
+
+    function openPopup() {
+      popup.removeAttribute('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePopup() {
+      popup.setAttribute('hidden', '');
+      document.body.style.overflow = '';
+      setCookie(COOKIE, 30);
+    }
+
+    popup.querySelector('.popup-close').addEventListener('click', closePopup);
+    popup.addEventListener('click', function (e) {
+      if (e.target === popup) closePopup();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !popup.hasAttribute('hidden')) closePopup();
+    });
+
+    if (trigger) {
+      trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        openPopup();
+      });
+    }
+
+    /* Auto-open on homepage only, once per 30 days */
+    var isHomepage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    if (isHomepage && !getCookie(COOKIE)) {
+      setTimeout(openPopup, DELAY);
+    }
+  }());
+
+  /* -----------------------------------------------------------
      Mobile Navigation Toggle (hamburger)
      ----------------------------------------------------------- */
   var hamburger = document.querySelector('.nav-hamburger');
