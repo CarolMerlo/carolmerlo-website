@@ -151,6 +151,7 @@ Only use CSS custom properties defined in `assets/css/main.css`. Key tokens:
 | `--text-mid` | `#555555` | Meta text, card body text |
 | `--text-soft` | `#777777` | Secondary/muted text |
 | `--gold-accessible` | `#8B6000` | Label text, accents |
+| `--cream-dark` | `#e8e0d5` | Border/divider color |
 
 **Do not use:** `--cream`, `--charcoal`, `--gray-mid` — these are not defined.
 
