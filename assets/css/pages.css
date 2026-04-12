@@ -10,7 +10,7 @@
   background-image: url('/assets/images/beautiful-background.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 420px;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 600px) {
-  .hero-banner { min-height: 260px; }
+  .hero-banner { min-height: 160px; }
 }
 
 /* -------------------------------------------------------------
