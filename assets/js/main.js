@@ -9,6 +9,99 @@ document.addEventListener('DOMContentLoaded', function () {
   const yearEl = document.getElementById('copyright-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* GA4 click tracking helper */
+  function trackClicks(selector, eventName, getParams) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', eventName, getParams ? getParams(el) : undefined);
+        }
+      });
+    });
+  }
+
+  trackClicks('.fire-formula-link', 'video_play', function () {
+    return { video_title: 'FIRE Formula' };
+  });
+  trackClicks('a[href*="calendly.com"]', 'calendly_click', function (el) {
+    return { link_text: el.textContent.trim() };
+  });
+  trackClicks('a[href*="amazon.com"]', 'book_link_click', function (el) {
+    return { link_text: el.textContent.trim() };
+  });
+
+  /* GA4: contact form submit (not a click) */
+  var contactForm = document.querySelector('form[name="contact"]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'contact_form_submit');
+      }
+    });
+  }
+
+  /* -----------------------------------------------------------
+     Email Signup Popup
+     ----------------------------------------------------------- */
+  (function () {
+    var COOKIE     = 'cm_popup_seen';
+    var DELAY      = 10000;
+    var MS_PER_DAY = 86400000;
+    var lastFocus  = null;
+
+    function getCookie(name) {
+      return document.cookie.split('; ').some(function (c) {
+        return c.indexOf(name + '=') === 0;
+      });
+    }
+    function setCookie(name, days) {
+      var exp = new Date(Date.now() + days * MS_PER_DAY).toUTCString();
+      document.cookie = name + '=1; expires=' + exp + '; path=/; Secure; SameSite=Lax';
+    }
+
+    var popup   = document.getElementById('subscribe-popup');
+    var trigger = document.getElementById('footer-subscribe-trigger');
+
+    if (!popup) return;
+
+    var closeBtn   = popup.querySelector('.popup-close');
+    var emailInput = popup.querySelector('input[type="email"]');
+
+    function openPopup(fromEl) {
+      lastFocus = fromEl || document.activeElement;
+      popup.removeAttribute('hidden');
+      document.body.classList.add('popup-open');
+      if (emailInput) emailInput.focus();
+    }
+    function closePopup() {
+      popup.setAttribute('hidden', '');
+      document.body.classList.remove('popup-open');
+      setCookie(COOKIE, 30);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closePopup);
+    popup.addEventListener('click', function (e) {
+      if (e.target === popup) closePopup();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !popup.hasAttribute('hidden')) closePopup();
+    });
+
+    if (trigger) {
+      trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        openPopup(trigger);
+      });
+    }
+
+    /* Auto-open on homepage only, once per 30 days */
+    var isHomepage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    if (isHomepage && !getCookie(COOKIE)) {
+      setTimeout(function () { openPopup(null); }, DELAY);
+    }
+  }());
+
   /* -----------------------------------------------------------
      Mobile Navigation Toggle (hamburger)
      ----------------------------------------------------------- */

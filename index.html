@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-55CCPZL');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transformational Coaching | Carol Merlo, M.Ed. | Spiritual &amp; Business Coaching</title>
@@ -45,23 +52,20 @@
   }
   </script>
 
-  <!-- Preload LCP hero image -->
+  <!-- Preload LCP hero images -->
   <link rel="preload" as="image" href="/assets/images/carol-primary.webp" type="image/webp">
-  <!-- Preconnect for GA4 -->
+  <link rel="preload" as="image" href="/assets/images/beautiful-background.jpg" type="image/jpeg">
+  <!-- Preconnect for GTM / GA4 -->
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/nav.css">
   <link rel="stylesheet" href="/assets/css/pages.css">
-  <!-- Google Analytics 4 | G-PL27Q84J9J -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PL27Q84J9J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PL27Q84J9J');
-  </script>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55CCPZL" title="Google Tag Manager"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- NAVIGATION -->
   <header class="site-header">
@@ -88,6 +92,15 @@
   </header>
 
   <main id="main-content">
+
+    <!-- =========================================================
+         HERO BANNER
+         ========================================================= -->
+    <section class="hero-banner">
+      <div class="hero-banner-content">
+        <h2 class="hero-banner-text">Real Change Begins Within</h2>
+      </div>
+    </section>
 
     <!-- =========================================================
          1. HERO
@@ -158,11 +171,18 @@
         <h2>The FIRE Formula</h2>
         <p>Four dimensions of inner and outer alignment. When they work together, results that felt elusive become natural.</p>
 
-        <!-- FIRE Formula GIF -->
+        <!-- FIRE Formula GIF — links to YouTube video -->
         <div class="fire-formula-gif">
-        <img src="/assets/images/fire-formula.webp"
-               alt="The FIRE Formula: Focus, Ignition, Relationships, Execution"
-               width="500" height="500">
+          <a href="https://youtu.be/Xe6xvnVMElg"
+             target="_blank"
+             rel="noopener"
+             class="fire-formula-link"
+             aria-label="Watch the FIRE Formula video on YouTube">
+            <img src="/assets/images/fire-formula.webp"
+                 alt="The FIRE Formula: Focus, Ignition, Relationships, Execution"
+                 width="500" height="500">
+            <span class="fire-formula-watch">&#9654; Watch Video</span>
+          </a>
         </div>
 
         <div class="fire-letters">
@@ -320,12 +340,40 @@
           <a href="https://www.youtube.com/@carolmerlocoaching" aria-label="YouTube" target="_blank" rel="noopener">YouTube</a>
           <a href="https://www.instagram.com/carolmerlocoaching" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
         </div>
+        <a href="#" class="footer-subscribe-link" id="footer-subscribe-trigger">Subscribe to Newsletter</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span id="copyright-year">2026</span> Carol Merlo. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- EMAIL SIGNUP POPUP -->
+  <div class="popup-overlay" id="subscribe-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" hidden>
+    <div class="popup-modal">
+      <button type="button" class="popup-close" aria-label="Close">&times;</button>
+      <h2 id="popup-title" class="popup-heading">Free Guided Meditation</h2>
+      <p class="popup-subheading">Enter your email to receive it</p>
+      <p class="popup-note">Plus occasional coaching insights and book updates from Carol.</p>
+      <form action="https://carolmerlo.us10.list-manage.com/subscribe/post?u=25e2117e1b175958ad44726e0&amp;id=3f8f388769&amp;f_id=00fa2de2f0"
+            method="post"
+            target="_blank">
+        <div class="popup-field">
+          <input type="email" name="EMAIL" placeholder="Email address *" required aria-label="Email address">
+        </div>
+        <div class="popup-field">
+          <input type="text" name="FNAME" placeholder="First name (optional)" aria-label="First name">
+        </div>
+        <input type="hidden" name="tags" value="13519580">
+        <!-- Mailchimp anti-bot field — do not remove -->
+        <div aria-hidden="true" style="position:absolute;left:-5000px;">
+          <input type="text" name="b_25e2117e1b175958ad44726e0_3f8f388769" tabindex="-1" value="">
+        </div>
+        <button type="submit" class="btn btn-primary popup-submit">Get Free Meditation</button>
+      </form>
+      <p class="popup-fine-print">No spam. Unsubscribe any time.</p>
+    </div>
+  </div>
 
   <script src="/assets/js/main.js"></script>
 </body>

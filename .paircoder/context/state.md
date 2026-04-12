@@ -4,18 +4,30 @@
 
 ## Active Plan
 
-**Plan:** plan-2026-04-website-rebuild-phase1
-**Title:** carolmerlo.com Website Rebuild — Phase 1 Core Site
-**Status:** Planning complete — ready to start T1.1
-**Current Sprint:** Sprint 1 (Phase 1 — Launch)
+**Plan:** plan-2026-04-sprint-2-homepage-enhancements
+**Title:** Sprint 2: Homepage Enhancements & Email Capture
+**Status:** Planning complete — ready to implement
+**Current Sprint:** Sprint 2
+
+**Previous Plan:** plan-2026-04-website-rebuild-phase1 (Phase 1 — 14/15 tasks done; T1.15 DNS Cutover pending)
 
 ## Current Focus
 
-Phase 1 plan created. 15 tasks spanning the full site build from pre-build checklist through DNS cutover. Start with T1.1 (pre-build checklist) — it is a prerequisite for all code tasks.
+Sprint 2 planned. 5 tasks: hero banner, YouTube link, Mailchimp popup, GA4 fixes, Netlify form notification. All work on `sprint-2` branch. Start with T2.1 once Carol adds `beautiful-background.jpg` to `assets/images/`.
 
 ## Task Status
 
-### Active Sprint — Phase 1 Core Site Build
+### Sprint 2 — Homepage Enhancements & Email Capture
+
+| ID | Title | Status | Priority |
+|----|-------|--------|----------|
+| T2.1 | Full-width hero banner on homepage | done ✓ | P1 |
+| T2.2 | YouTube link on FIRE Formula image | pending | P1 |
+| T2.3 | Mailchimp email popup (homepage) | pending | P1 |
+| T2.4 | GA4 fixes and conversion tracking | pending | P1 |
+| T2.5 | Netlify form email notification (manual step) | pending | P1 |
+
+### Sprint 1 — Phase 1 Core Site Build
 
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
@@ -42,6 +54,17 @@ Phase 1 plan created. 15 tasks spanning the full site build from pre-build check
 - Phase 4: Stripe payments, meditation audio library, testimonial submission form
 
 ## What Was Just Done
+
+- **T2.1 done** (auto-updated by hook)
+
+### Session: 2026-04-11 — T2.1 Complete
+
+- Pulled `beautiful-background.jpg` from GitHub (uploaded by Carol), renamed to remove space in filename
+- Added `.hero-banner` section as first element in `<main>` on homepage — above all existing content
+- Text "Real Change Begins Within" centered over image with text-shadow for legibility
+- CSS: `.hero-banner`, `.hero-banner-content`, `.hero-banner-text` added to pages.css
+- Responsive: `clamp(2rem, 5vw, 3.5rem)` font, 260px min-height on mobile
+- All linters pass; committed and pushed to sprint-2 branch
 
 ### Session: 2026-04-11 — Post-T1.14 Polish & CI
 
@@ -206,7 +229,12 @@ Phase 1 plan created. 15 tasks spanning the full site build from pre-build check
 
 ## What's Next
 
-1. **T1.15** — DNS Cutover (Carol approval + PageSpeed check required first)
+1. ~~**T2.1**~~ — Done ✓
+2. **T2.2** — YouTube link on FIRE Formula image (no blockers — can start now)
+3. **T2.3** — Mailchimp popup (blocked until Carol provides Mailchimp embed code)
+4. **T2.4** — GA4 fixes (Part A is manual dashboard work; Part B code can start anytime)
+5. **T2.5** — Netlify form notification (manual dashboard step — Carol or son)
+6. **T1.15** — DNS Cutover (deferred — needs Carol's preview approval + PageSpeed 90+)
 
 ## Blockers
 
