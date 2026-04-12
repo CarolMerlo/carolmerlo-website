@@ -1,6 +1,6 @@
 # Current State
 
-> Last updated: 2026-04-12
+> Last updated: 2026-04-12 (T3.1 complete)
 
 ## Active Plan
 
@@ -22,7 +22,7 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
-| T3.1 | Write Blog Article 1 (to be selected from source docs) | pending | P1 |
+| T3.1 | The FIRE Formula: How to Break Free from What's Keeping You Stuck | done ✓ | P1 |
 | T3.2 | Write Blog Article 2 | pending | P1 |
 | T3.3 | Write Blog Article 3 | pending | P1 |
 | T3.4 | Write Blog Article 4 | pending | P1 |
@@ -55,6 +55,17 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 
 ## What Was Just Done
 
+### Session: 2026-04-12 — T3.1 Complete
+
+- Read FIRE Formula Workbook in full
+- Wrote blog article (~950 words) in Carol's voice: "The FIRE Formula: How to Break Free from What's Keeping You Stuck"
+- Covers F=Focus, I=Ignition, R=Relationships, E=Execution with neuroscience framing
+- Built static HTML page at /blog/fire-formula-break-free-from-stuck/
+- Added blog article CSS to pages.css (.blog-article, .blog-lead, .blog-divider, etc.)
+- Updated blog index: article card replaces coming-soon placeholder
+- Carol reviewed locally and approved
+- Committed and pushed to sprint-3 branch
+
 ### Session: 2026-04-12 — Sprint 2 Wrap-up & Sprint 3 Setup
 
 - Reduced hero banner min-height: 420px → 240px desktop, 260px → 160px mobile (image is 1080x466px)
@@ -69,7 +80,8 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 
 ## What's Next
 
-1. **T3.1** — Read Carol's source documents, select best topic for Article 1, write it, Carol reviews
+1. ~~**T3.1**~~ — Done ✓
+2. **T3.2** — The 5 Shifts Every Conscious Entrepreneur Needs Right Now (source: The 5 Shifts Final.docx)
 2. **T3.2–T3.8** — Repeat for remaining 7 articles (one at a time, review after each)
 3. **T1.15** — DNS Cutover (deferred — Carol's decision when ready, needs PageSpeed ≥ 90)
 
