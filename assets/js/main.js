@@ -9,25 +9,28 @@ document.addEventListener('DOMContentLoaded', function () {
   const yearEl = document.getElementById('copyright-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* GA4: FIRE Formula video link click */
-  document.querySelectorAll('.fire-formula-link').forEach(function (el) {
-    el.addEventListener('click', function () {
-      if (typeof gtag === 'function') {
-        gtag('event', 'video_play', { video_title: 'FIRE Formula' });
-      }
+  /* GA4 click tracking helper */
+  function trackClicks(selector, eventName, getParams) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', eventName, getParams ? getParams(el) : undefined);
+        }
+      });
     });
+  }
+
+  trackClicks('.fire-formula-link', 'video_play', function () {
+    return { video_title: 'FIRE Formula' };
+  });
+  trackClicks('a[href*="calendly.com"]', 'calendly_click', function (el) {
+    return { link_text: el.textContent.trim() };
+  });
+  trackClicks('a[href*="amazon.com"]', 'book_link_click', function (el) {
+    return { link_text: el.textContent.trim() };
   });
 
-  /* GA4: Calendly CTA clicks (all pages) */
-  document.querySelectorAll('a[href*="calendly.com"]').forEach(function (el) {
-    el.addEventListener('click', function () {
-      if (typeof gtag === 'function') {
-        gtag('event', 'calendly_click', { link_text: el.textContent.trim() });
-      }
-    });
-  });
-
-  /* GA4: Contact form submission */
+  /* GA4: contact form submit (not a click) */
   var contactForm = document.querySelector('form[name="contact"]');
   if (contactForm) {
     contactForm.addEventListener('submit', function () {
@@ -37,22 +40,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* GA4: Amazon book link clicks */
-  document.querySelectorAll('a[href*="amazon.com"]').forEach(function (el) {
-    el.addEventListener('click', function () {
-      if (typeof gtag === 'function') {
-        gtag('event', 'book_link_click', { link_text: el.textContent.trim() });
-      }
-    });
-  });
-
   /* -----------------------------------------------------------
      Email Signup Popup
      ----------------------------------------------------------- */
   (function () {
-    var COOKIE = 'cm_popup_seen';
-    var DELAY  = 10000;
-    var lastFocus = null;
+    var COOKIE     = 'cm_popup_seen';
+    var DELAY      = 10000;
+    var MS_PER_DAY = 86400000;
+    var lastFocus  = null;
 
     function getCookie(name) {
       return document.cookie.split('; ').some(function (c) {
@@ -60,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
     function setCookie(name, days) {
-      var exp = new Date(Date.now() + days * 864e5).toUTCString();
+      var exp = new Date(Date.now() + days * MS_PER_DAY).toUTCString();
       document.cookie = name + '=1; expires=' + exp + '; path=/; Secure; SameSite=Lax';
     }
 
