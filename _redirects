@@ -14,6 +14,10 @@
 /resources.html               /business-coaching          301
 /coaching.html                /business-coaching          301
 
+# Webinar replay — redirect to YouTube
+/webinar_replay                 https://youtu.be/yP8W3WOSzLQ  301
+/webinar-replay                 https://youtu.be/yP8W3WOSzLQ  301
+
 # Off-brand pages — redirect to homepage
 /health.html                  /                           301
 /superfoods.html              /                           301
