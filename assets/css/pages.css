@@ -1034,3 +1034,105 @@ body.popup-open { overflow: hidden; }
   font-style: italic;
   min-height: 200px;
 }
+
+/* -------------------------------------------------------------
+   BLOG ARTICLE
+   ------------------------------------------------------------- */
+.blog-article {
+  padding: var(--space-xl) 0;
+}
+.blog-article-inner {
+  max-width: 740px;
+}
+.blog-article-header {
+  margin-bottom: var(--space-lg);
+}
+.blog-back-link {
+  display: inline-block;
+  color: var(--teal);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+.blog-back-link:hover {
+  text-decoration: underline;
+}
+.blog-article-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+.blog-article-meta {
+  color: var(--gray-mid);
+  font-size: 0.9rem;
+  margin: 0;
+}
+.blog-article-body {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+.blog-article-body h2 {
+  font-size: 1.4rem;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+.blog-lead {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--teal-darker);
+  margin-bottom: var(--space-md);
+}
+.blog-divider {
+  border: none;
+  border-top: 1px solid var(--cream-dark, #e8e0d5);
+  margin: var(--space-lg) 0;
+}
+.blog-fire-initial {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold-accessible);
+}
+.blog-article-cta {
+  background: var(--cream);
+  border-left: 4px solid var(--gold-accessible);
+  padding: var(--space-lg);
+  margin-top: var(--space-xl);
+  border-radius: 4px;
+}
+.blog-article-cta h2 {
+  font-size: 1.3rem;
+  margin-bottom: var(--space-xs);
+}
+.blog-cta-secondary {
+  margin-top: var(--space-sm);
+  font-size: 0.95rem;
+}
+.blog-cta-secondary a {
+  color: var(--teal);
+}
+.blog-article-footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--cream-dark, #e8e0d5);
+}
+
+/* Blog index article card (for when articles are listed) */
+.blog-article-card {
+  border-bottom: 1px solid var(--cream-dark, #e8e0d5);
+  padding: var(--space-md) 0;
+}
+.blog-article-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+}
+.blog-article-card h2 a {
+  color: var(--charcoal);
+  text-decoration: none;
+}
+.blog-article-card h2 a:hover {
+  color: var(--teal);
+}
+.blog-article-card p {
+  color: var(--gray-mid);
+  margin: 0;
+}
