@@ -24,8 +24,8 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 |----|-------|--------|----------|
 | T3.1 | The FIRE Formula: How to Break Free from What's Keeping You Stuck | done ✓ | P1 |
 | T3.2 | The 5 Shifts Every Conscious Entrepreneur Needs Right Now | done ✓ | P1 |
-| T3.3 | Write Blog Article 3 | pending | P1 |
-| T3.4 | Write Blog Article 4 | pending | P1 |
+| T3.3 | Taking the Mystery Out of Meditation | done ✓ | P1 |
+| T3.4 | The 7 Success Saboteurs — Why Smart People Stay Stuck | done ✓ | P1 |
 | T3.5 | Write Blog Article 5 | pending | P1 |
 | T3.6 | Write Blog Article 6 | pending | P1 |
 | T3.7 | Write Blog Article 7 | pending | P1 |
@@ -54,6 +54,10 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 - Phase 4: Stripe payments, meditation audio library, testimonial submission form
 
 ## What Was Just Done
+
+- **T3.3 done** (auto-updated by hook)
+
+- **T3.2 done** (auto-updated by hook)
 
 - **T3.1 done** (auto-updated by hook)
 
@@ -94,7 +98,9 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 
 1. ~~**T3.1**~~ — Done ✓
 2. ~~**T3.2**~~ — Done ✓
-3. **T3.3** — Taking the Mystery Out of Meditation (source: Taking the Mystery Out of Meditation digital format.docx)
+3. ~~**T3.3**~~ — Done ✓
+4. ~~**T3.4**~~ — Done ✓
+5. **T3.5** — Mastering Meditation with Frequencies (source: Mastering Meditation with Frequencies.docx)
 2. **T3.2–T3.8** — Repeat for remaining 7 articles (one at a time, review after each)
 3. **T1.15** — DNS Cutover (deferred — Carol's decision when ready, needs PageSpeed ≥ 90)
 
