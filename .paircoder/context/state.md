@@ -28,7 +28,7 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 | T3.4 | The 7 Success Saboteurs — Why Smart People Stay Stuck | done ✓ | P1 |
 | T3.5 | Mastering Meditation with Frequencies | done ✓ | P1 |
 | T3.6 | How to Build a Prosperity Consciousness | done ✓ | P1 |
-| T3.7 | Write Blog Article 7 | pending | P1 |
+| T3.7 | The Networking Conversation: Why Follow-Up Feels Pushy | done ✓ | P1 |
 | T3.8 | Write Blog Article 8 | pending | P1 |
 
 ### Sprint 2 — Homepage Enhancements & Email Capture (COMPLETE ✓)
@@ -54,6 +54,10 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 - Phase 4: Stripe payments, meditation audio library, testimonial submission form
 
 ## What Was Just Done
+
+- **T3.7 done** — Blog article: "The Networking Conversation: Why Follow-Up Feels Pushy (And How to Fix It)" (~1000 words). Built at /blog/networking-conversation-follow-up/. Covers the inner game (school dance metaphor, you're not responsible for their choice), outer game (ask questions, read personality types), and the reframe that follow-up is an offer not pressure. Blog index updated. Committed and pushed to sprint-3.
+
+- **T3.6 done** (auto-updated by hook)
 
 - **T3.5 done** (auto-updated by hook)
 
@@ -106,8 +110,8 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 4. ~~**T3.4**~~ — Done ✓
 5. ~~**T3.5**~~ — Done ✓
 6. ~~**T3.6**~~ — Done ✓
-7. **T3.7** — The Networking Conversation: Why Follow-Up Feels Pushy (source: The Networking Conversation book)
-2. **T3.2–T3.8** — Repeat for remaining 7 articles (one at a time, review after each)
+7. ~~**T3.7**~~ — Done ✓
+8. **T3.8** — Enlightened Entrepreneurship: Why Alignment Comes Before Action (source: Enlightened Entrepreneurship book + Your Foundation Mini Course transcription)
 3. **T1.15** — DNS Cutover (deferred — Carol's decision when ready, needs PageSpeed ≥ 90)
 
 ## Source Documents for Blog Articles
