@@ -23,7 +23,7 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
 | T3.1 | The FIRE Formula: How to Break Free from What's Keeping You Stuck | done ✓ | P1 |
-| T3.2 | Write Blog Article 2 | pending | P1 |
+| T3.2 | The 5 Shifts Every Conscious Entrepreneur Needs Right Now | done ✓ | P1 |
 | T3.3 | Write Blog Article 3 | pending | P1 |
 | T3.4 | Write Blog Article 4 | pending | P1 |
 | T3.5 | Write Blog Article 5 | pending | P1 |
@@ -55,6 +55,18 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 
 ## What Was Just Done
 
+- **T3.1 done** (auto-updated by hook)
+
+### Session: 2026-04-12 — T3.2 Complete
+
+- Read The 5 Shifts Final.docx in full
+- Wrote blog article (~1000 words): "The 5 Shifts Every Conscious Entrepreneur Needs Right Now"
+- Covers all 5 shifts: priorities, act-as-if, consistency, energy, healthy boundaries
+- Includes Carol's personal backstory (singer → single parent → top 80% income earner)
+- Built static HTML page at /blog/5-shifts-conscious-entrepreneur/
+- Blog index updated with new card (newest first)
+- Carol approved; committed and pushed to sprint-3
+
 ### Session: 2026-04-12 — T3.1 Complete
 
 - Read FIRE Formula Workbook in full
@@ -81,7 +93,8 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 ## What's Next
 
 1. ~~**T3.1**~~ — Done ✓
-2. **T3.2** — The 5 Shifts Every Conscious Entrepreneur Needs Right Now (source: The 5 Shifts Final.docx)
+2. ~~**T3.2**~~ — Done ✓
+3. **T3.3** — Taking the Mystery Out of Meditation (source: Taking the Mystery Out of Meditation digital format.docx)
 2. **T3.2–T3.8** — Repeat for remaining 7 articles (one at a time, review after each)
 3. **T1.15** — DNS Cutover (deferred — Carol's decision when ready, needs PageSpeed ≥ 90)
 
