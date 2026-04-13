@@ -1136,3 +1136,23 @@ body.popup-open { overflow: hidden; }
   color: var(--text-mid);
   margin: 0;
 }
+.blog-article-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+/* Blog article hero image */
+.blog-article-image {
+  margin: 0 0 var(--space-lg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.blog-article-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
