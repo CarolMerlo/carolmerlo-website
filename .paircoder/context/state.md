@@ -55,6 +55,8 @@ Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol P
 
 ## What Was Just Done
 
+- **T3.8 done** (auto-updated by hook)
+
 - **T3.8 done** — Blog article: "Enlightened Entrepreneurship: Why Alignment Comes Before Action" (~1100 words). Built at /blog/enlightened-entrepreneurship-alignment-before-action/. Covers inner/outer game framework, the four-part firm foundation (purpose/mission/vision/values), the four states of consciousness (to-me/by-me/through-me/as-me), happiness as a prerequisite not a reward, and alignment as an ongoing practice. Blog index updated. Committed and pushed to sprint-3.
 
 - **T3.7 done** (auto-updated by hook)
