@@ -1,24 +1,33 @@
 # Current State
 
-> Last updated: 2026-04-12 (T3.1 complete)
+> Last updated: 2026-04-13 (Sprint 6 planning)
 
 ## Active Plan
 
-**Plan:** plan-2026-04-sprint-3-blog
-**Title:** Sprint 3: Blog Articles
+**Plan:** plan-2026-04-sprint-6-images-video
+**Title:** Sprint 6: Blog image SEO rename + business page video
 **Status:** Planning
-**Current Sprint:** Sprint 3
-**Branch:** sprint-3
+**Current Sprint:** Sprint 6
+**Branch:** sprint-6
+
+**Previous Plan:** plan-2026-04-sprint-3-blog (Sprint 3 — all 8 blog articles done ✓)
 
 **Previous Plan:** plan-2026-04-sprint-2-homepage-enhancements (Sprint 2 — all 5 tasks done ✓)
 
 ## Current Focus
 
-Sprint 3: Write 8 blog articles based on Carol's source documents in `C:/Carol Projects/Social Media posts and text/blog post content/`. Write one article at a time, Carol reviews and edits, then publish. Blog pages are static HTML matching the existing site design.
+Sprint 6: Replace blog banner images with optimized SEO-named versions; add YouTube video embed to business coaching page under the Enlightened Entrepreneur Framework section.
 
 ## Task Status
 
-### Sprint 3 — Blog Articles
+### Sprint 6 — Images & Video
+
+| ID | Title | Status | Priority |
+|----|-------|--------|----------|
+| T6.1 | Replace blog images with optimized SEO-named versions | pending | P0 |
+| T6.2 | Embed YouTube video on business coaching page | pending | P0 |
+
+### Sprint 3 — Blog Articles (COMPLETE ✓)
 
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
