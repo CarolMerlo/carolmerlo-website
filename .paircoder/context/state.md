@@ -26,7 +26,7 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 |----|-------|--------|----------|
 | T7.1 | Netlify URL redirects: old Weebly URLs to new clean URLs | done ✓ | P0 |
 | T7.2 | Fix social URL inconsistency in About page schema | done ✓ | P0 |
-| T7.3 | Add Service schema to Spiritual Coaching page | pending | P1 |
+| T7.3 | Add Service schema to Spiritual Coaching page | done ✓ | P1 |
 | T7.4 | Add Service schema to Business Coaching page | pending | P1 |
 | T7.5 | Add Book schema to Books page (5 books) | pending | P1 |
 | T7.6 | Add BlogPosting schema to all 8 blog articles | pending | P1 |
@@ -78,7 +78,11 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 
 ## What Was Just Done
 
+- **T7.2 done** (auto-updated by hook)
+
 - **T7.1 done** (auto-updated by hook)
+
+- **T7.3 done** — Added Service schema to `spiritual-coaching/index.html`. Type: Service, provider: Carol Merlo, areaServed: Dallas/Online.
 
 - **T7.2 done** — Fixed `sameAs` social URLs in About page `ld+json` schema. Facebook, YouTube, Instagram now use `CarolMerloCoaching` handles with trailing slashes, matching homepage schema exactly.
 
