@@ -29,7 +29,7 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 | T7.3 | Add Service schema to Spiritual Coaching page | done ✓ | P1 |
 | T7.4 | Add Service schema to Business Coaching page | done ✓ | P1 |
 | T7.5 | Add Book schema to Books page (5 books) | done ✓ | P1 |
-| T7.6 | Add BlogPosting schema to all 8 blog articles | pending | P1 |
+| T7.6 | Add BlogPosting schema to all 8 blog articles | done ✓ | P1 |
 | T7.7 | Fix missing alt text on Spiritual Coaching hero image | pending | P1 |
 | T7.8 | Submit XML sitemap to Google Search Console | pending | P2 |
 | T7.9 | DNS cutover: GoDaddy to Netlify | pending | P2 |
@@ -77,6 +77,10 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 - Phase 4: Stripe payments, meditation audio library, testimonial submission form
 
 ## What Was Just Done
+
+- **T7.6 done** — Added BlogPosting schema to all 8 blog article pages. Schema inserted after `og:type` meta tag, before CSS links. Values pulled verbatim from each page's existing meta/canonical tags. `datePublished: "2026-04-12"` on all articles.
+
+- **T7.5 done** (auto-updated by hook)
 
 - **T7.4 done** (auto-updated by hook)
 
