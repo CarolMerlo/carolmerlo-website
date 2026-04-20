@@ -24,7 +24,7 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
-| T7.1 | Netlify URL redirects: old Weebly URLs to new clean URLs | pending | P0 |
+| T7.1 | Netlify URL redirects: old Weebly URLs to new clean URLs | done ✓ | P0 |
 | T7.2 | Fix social URL inconsistency in About page schema | pending | P0 |
 | T7.3 | Add Service schema to Spiritual Coaching page | pending | P1 |
 | T7.4 | Add Service schema to Business Coaching page | pending | P1 |
@@ -77,6 +77,8 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 - Phase 4: Stripe payments, meditation audio library, testimonial submission form
 
 ## What Was Just Done
+
+- **T7.1 done** — Added 10 `[[redirects]]` blocks to `netlify.toml`. All old Weebly `.html` URLs now 301 to new clean paths. Existing security headers untouched. Committed and pushed to sprint-7-seo-launch.
 
 - **T3.8 done** (auto-updated by hook)
 
@@ -132,6 +134,10 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 - sprint-2 branch merged to master via PR
 
 ## What's Next
+
+1. **T7.2** — Fix social URL inconsistency in About page schema (P0)
+2. **T7.3–T7.7** — Schema additions and alt text fix (P1)
+3. **T7.8–T7.9** — Sitemap + DNS cutover (P2, launch gate)
 
 1. ~~**T3.1**~~ — Done ✓
 2. ~~**T3.2**~~ — Done ✓
