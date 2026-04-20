@@ -2,12 +2,12 @@
   "task_types": {
     "feature": {
       "task_type": "feature",
-      "sample_count": 14,
+      "sample_count": 32,
       "avg_tokens": 0.0,
       "std_dev": 0.0,
       "p80_tokens": 0.0,
       "avg_duration_seconds": 0.0,
-      "success_rate": 0.9285714285714286,
+      "success_rate": 0.8125,
       "recommended_model": "haiku",
       "model": "aggregate",
       "recommended_effort": "high",
@@ -19,12 +19,12 @@
     },
     "chore": {
       "task_type": "chore",
-      "sample_count": 3,
+      "sample_count": 5,
       "avg_tokens": 0.0,
       "std_dev": 0.0,
       "p80_tokens": 0.0,
       "avg_duration_seconds": 0.0,
-      "success_rate": 0.6666666666666666,
+      "success_rate": 0.6,
       "recommended_model": "haiku",
       "model": "aggregate",
       "recommended_effort": "high",
@@ -36,12 +36,12 @@
     },
     "feature:unknown": {
       "task_type": "feature",
-      "sample_count": 14,
+      "sample_count": 32,
       "avg_tokens": 0.0,
       "std_dev": 0.0,
       "p80_tokens": 0.0,
       "avg_duration_seconds": 0.0,
-      "success_rate": 0.9285714285714286,
+      "success_rate": 0.8125,
       "recommended_model": "haiku",
       "model": "unknown",
       "recommended_effort": "high",
@@ -53,12 +53,12 @@
     },
     "chore:unknown": {
       "task_type": "chore",
-      "sample_count": 3,
+      "sample_count": 5,
       "avg_tokens": 0.0,
       "std_dev": 0.0,
       "p80_tokens": 0.0,
       "avg_duration_seconds": 0.0,
-      "success_rate": 0.6666666666666666,
+      "success_rate": 0.6,
       "recommended_model": "haiku",
       "model": "unknown",
       "recommended_effort": "high",
@@ -69,6 +69,6 @@
       "cx_per_minute": null
     }
   },
-  "last_calibrated": "2026-04-11T22:06:49.087972+00:00",
-  "total_records": 17
+  "last_calibrated": "2026-04-20T21:48:30.719303+00:00",
+  "total_records": 37
 }
