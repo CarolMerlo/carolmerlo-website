@@ -25,7 +25,7 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
 | T7.1 | Netlify URL redirects: old Weebly URLs to new clean URLs | done ✓ | P0 |
-| T7.2 | Fix social URL inconsistency in About page schema | pending | P0 |
+| T7.2 | Fix social URL inconsistency in About page schema | done ✓ | P0 |
 | T7.3 | Add Service schema to Spiritual Coaching page | pending | P1 |
 | T7.4 | Add Service schema to Business Coaching page | pending | P1 |
 | T7.5 | Add Book schema to Books page (5 books) | pending | P1 |
@@ -79,6 +79,8 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 ## What Was Just Done
 
 - **T7.1 done** (auto-updated by hook)
+
+- **T7.2 done** — Fixed `sameAs` social URLs in About page `ld+json` schema. Facebook, YouTube, Instagram now use `CarolMerloCoaching` handles with trailing slashes, matching homepage schema exactly.
 
 - **T7.1 done** — Added 10 `[[redirects]]` blocks to `netlify.toml`. All old Weebly `.html` URLs now 301 to new clean paths. Existing security headers untouched. Committed and pushed to sprint-7-seo-launch.
 
@@ -137,8 +139,7 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 
 ## What's Next
 
-1. **T7.2** — Fix social URL inconsistency in About page schema (P0)
-2. **T7.3–T7.7** — Schema additions and alt text fix (P1)
+1. **T7.3–T7.7** — Schema additions and alt text fix (P1)
 3. **T7.8–T7.9** — Sitemap + DNS cutover (P2, launch gate)
 
 1. ~~**T3.1**~~ — Done ✓
