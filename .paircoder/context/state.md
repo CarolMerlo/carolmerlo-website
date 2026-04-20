@@ -1,31 +1,45 @@
 # Current State
 
-> Last updated: 2026-04-13 (Sprint 6 planning)
+> Last updated: 2026-04-18 (Sprint 7 planning)
 
 ## Active Plan
 
-**Plan:** plan-2026-04-sprint-6-images-video
-**Title:** Sprint 6: Blog image SEO rename + business page video
+**Plan:** plan-2026-04-sprint-7-seo-launch
+**Title:** Sprint 7: SEO Remediation & Launch Readiness
 **Status:** Planning
-**Current Sprint:** Sprint 6
-**Branch:** sprint-6
+**Current Sprint:** Sprint 7
+**Branch:** sprint-7-seo-launch
 
-**Previous Plan:** plan-2026-04-sprint-3-blog (Sprint 3 — all 8 blog articles done ✓)
+**Previous Plan:** plan-2026-04-sprint-6-images-video (Sprint 6 — complete ✓)
 
 **Previous Plan:** plan-2026-04-sprint-2-homepage-enhancements (Sprint 2 — all 5 tasks done ✓)
 
 ## Current Focus
 
-Sprint 6: Replace blog banner images with optimized SEO-named versions; add YouTube video embed to business coaching page under the Enlightened Entrepreneur Framework section.
+Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must complete before DNS cutover. P1 tasks complete within one week of launch. P2 tasks are the launch sequence itself.
 
 ## Task Status
 
-### Sprint 6 — Images & Video
+### Sprint 7 — SEO Remediation & Launch Readiness
 
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
-| T6.1 | Replace blog images with optimized SEO-named versions | pending | P0 |
-| T6.2 | Embed YouTube video on business coaching page | pending | P0 |
+| T7.1 | Netlify URL redirects: old Weebly URLs to new clean URLs | pending | P0 |
+| T7.2 | Fix social URL inconsistency in About page schema | pending | P0 |
+| T7.3 | Add Service schema to Spiritual Coaching page | pending | P1 |
+| T7.4 | Add Service schema to Business Coaching page | pending | P1 |
+| T7.5 | Add Book schema to Books page (5 books) | pending | P1 |
+| T7.6 | Add BlogPosting schema to all 8 blog articles | pending | P1 |
+| T7.7 | Fix missing alt text on Spiritual Coaching hero image | pending | P1 |
+| T7.8 | Submit XML sitemap to Google Search Console | pending | P2 |
+| T7.9 | DNS cutover: GoDaddy to Netlify | pending | P2 |
+
+### Sprint 6 — Images & Video (COMPLETE ✓)
+
+| ID | Title | Status | Priority |
+|----|-------|--------|----------|
+| T6.1 | Replace blog images with optimized SEO-named versions | done ✓ | P0 |
+| T6.2 | Embed YouTube video on business coaching page | done ✓ | P0 |
 
 ### Sprint 3 — Blog Articles (COMPLETE ✓)
 
