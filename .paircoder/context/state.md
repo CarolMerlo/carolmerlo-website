@@ -78,6 +78,8 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 
 ## What Was Just Done
 
+- **T7.1 done** (auto-updated by hook)
+
 - **T7.1 done** — Added 10 `[[redirects]]` blocks to `netlify.toml`. All old Weebly `.html` URLs now 301 to new clean paths. Existing security headers untouched. Committed and pushed to sprint-7-seo-launch.
 
 - **T3.8 done** (auto-updated by hook)
