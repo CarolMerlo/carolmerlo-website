@@ -11,3 +11,64 @@
   for = "/admin/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+# 301 redirects: old Weebly .html URLs -> new clean URLs
+[[redirects]]
+  from = "/spiritual-coaching.html"
+  to = "/spiritual-coaching/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/business.html"
+  to = "/business-coaching/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/books.html"
+  to = "/books/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work-with-me.html"
+  to = "/work-with-me/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pricing.html"
+  to = "/pricing/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources.html"
+  to = "/business-coaching/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/theprogram.html"
+  to = "/business-coaching/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog/"
+  status = 301
+  force = true

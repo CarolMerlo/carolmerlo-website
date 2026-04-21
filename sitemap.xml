@@ -6,9 +6,9 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://carolmerlo.com/work-with-me/</loc>
+    <loc>https://carolmerlo.com/spiritual-coaching/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://carolmerlo.com/business-coaching/</loc>
@@ -16,9 +16,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://carolmerlo.com/spiritual-coaching/</loc>
+    <loc>https://carolmerlo.com/work-with-me/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://carolmerlo.com/books/</loc>
@@ -28,6 +28,54 @@
   <url>
     <loc>https://carolmerlo.com/blog/</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/fire-formula-break-free-from-stuck/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/5-shifts-conscious-entrepreneur/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/taking-the-mystery-out-of-meditation/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/7-success-saboteurs/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/mastering-meditation-with-frequencies/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/build-prosperity-consciousness/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/networking-conversation-follow-up/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carolmerlo.com/blog/enlightened-entrepreneurship-alignment-before-action/</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>

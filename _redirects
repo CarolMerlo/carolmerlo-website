@@ -1,18 +1,9 @@
 # _redirects
-# Netlify processes this file automatically on every deploy.
-# Preserves Google rankings from old Weebly URLs and prevents broken links.
+# Core Weebly page redirects are handled in netlify.toml (authoritative source).
+# This file covers additional paths not in netlify.toml.
 
-# Core page redirects
-/business.html                /business-coaching          301
-/spiritual-coaching.html      /spiritual-coaching         301
-/work-with-me.html            /work-with-me               301
-/books.html                   /books                      301
-/about.html                   /about                      301
-/contact.html                 /contact                    301
-/theprogram.html              /pricing                    301
-/pricing.html                 /pricing                    301
-/resources.html               /business-coaching          301
-/coaching.html                /business-coaching          301
+# Extra business-coaching alias
+/coaching.html                /business-coaching/         301
 
 # Webinar replay — redirect to YouTube
 /webinar_replay                 https://youtu.be/yP8W3WOSzLQ  301
@@ -25,5 +16,5 @@
 /courses.html                 /                           301
 /downloads.html               /                           301
 /happylife.html               /                           301
-/checkout.html                /pricing                    301
+/checkout.html                /pricing/                   301
 /mannatechassociate.html      /                           301
