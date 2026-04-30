@@ -1,0 +1,72 @@
+suite: books
+name: "Books Page — Content and Buy Links"
+tags: [critical, regression]
+description: "Verify all 5 books display with images and Amazon buy links. Catches broken or placeholder links."
+environments: [dev, prod]
+
+scenarios:
+
+  - name: "Books page renders all 5 books"
+    steps:
+      - navigate: "${base_url}/books/"
+      - verify: "h3 'The FIRE Formula' is visible"
+      - verify: "h3 'Taking the Mystery Out of Meditation' is visible"
+      - verify: "h3 'Create a Happy Life' is visible"
+      - verify: "h3 'Enlightened Entrepreneurship' is visible"
+      - verify: "h3 'The Networking Conversation' is visible"
+      - verify: "5 'Buy on Amazon' links are present"
+
+  - name: "FIRE Formula book has real Amazon link (not generic)"
+    steps:
+      - navigate: "${base_url}/books/"
+      - find: "h3 containing 'The FIRE Formula'"
+      - find_nearby: "a.btn containing 'Buy on Amazon'"
+      - verify: "that link href is NOT 'https://www.amazon.com' exactly"
+      - verify: "that link href contains 'amazon.com/'"
+
+  - name: "Meditation book has real Amazon link"
+    steps:
+      - navigate: "${base_url}/books/"
+      - find: "h3 containing 'Taking the Mystery Out of Meditation'"
+      - find_nearby: "a.btn containing 'Buy on Amazon'"
+      - verify: "that link href contains 'amazon.com/'"
+      - verify: "that link href is NOT 'https://www.amazon.com' exactly"
+
+  - name: "Create a Happy Life book has real Amazon link"
+    steps:
+      - navigate: "${base_url}/books/"
+      - find: "h3 containing 'Create a Happy Life'"
+      - find_nearby: "a.btn containing 'Buy on Amazon'"
+      - verify: "that link href contains 'amazon.com/'"
+      - verify: "that link href is NOT 'https://www.amazon.com' exactly"
+
+  - name: "Enlightened Entrepreneurship book has real Amazon link"
+    steps:
+      - navigate: "${base_url}/books/"
+      - find: "h3 containing 'Enlightened Entrepreneurship'"
+      - find_nearby: "a.btn containing 'Buy on Amazon'"
+      - verify: "that link href contains 'amazon.com/'"
+      - verify: "that link href is NOT 'https://www.amazon.com' exactly"
+
+  - name: "Networking Conversation book has real Amazon link"
+    steps:
+      - navigate: "${base_url}/books/"
+      - find: "h3 containing 'The Networking Conversation'"
+      - find_nearby: "a.btn containing 'Buy on Amazon'"
+      - verify: "that link href contains 'amazon.com/'"
+      - verify: "that link href is NOT 'https://www.amazon.com' exactly"
+
+  - name: "All book cover images load"
+    steps:
+      - navigate: "${base_url}/books/"
+      - verify: "img with src containing 'book-fire-formula' loads without error"
+      - verify: "img with src containing 'book-meditation' loads without error"
+      - verify: "img with src containing 'book-happy-life' loads without error"
+      - verify: "img with src containing 'book-enlightened-entrepreneurship' loads without error"
+      - verify: "img with src containing 'book-networking-conversation' loads without error"
+
+  - name: "Bottom CTA links to Business Coaching"
+    steps:
+      - navigate: "${base_url}/books/"
+      - verify: "link to '/business-coaching/' is present in the closing section"
+      - verify: "Calendly insight call link is present"

@@ -1,0 +1,85 @@
+suite: blog
+name: "Blog — All 8 Articles Accessible"
+tags: [critical, regression]
+description: "Verify all 8 blog articles load, have correct titles, and back-links work."
+environments: [dev, prod]
+
+scenarios:
+
+  - name: "Blog index shows 8 article cards"
+    steps:
+      - navigate: "${base_url}/blog/"
+      - verify: "div.blog-article-card count is at least 8"
+      - verify: "link to '/blog/fire-formula-break-free-from-stuck/' is present"
+      - verify: "link to '/blog/5-shifts-conscious-entrepreneur/' is present"
+      - verify: "link to '/blog/taking-the-mystery-out-of-meditation/' is present"
+      - verify: "link to '/blog/7-success-saboteurs/' is present"
+      - verify: "link to '/blog/mastering-meditation-with-frequencies/' is present"
+      - verify: "link to '/blog/build-prosperity-consciousness/' is present"
+      - verify: "link to '/blog/networking-conversation-follow-up/' is present"
+      - verify: "link to '/blog/enlightened-entrepreneurship-alignment-before-action/' is present"
+
+  - name: "FIRE Formula article loads and has correct content"
+    steps:
+      - navigate: "${base_url}/blog/fire-formula-break-free-from-stuck/"
+      - verify: "page title contains 'FIRE Formula'"
+      - verify: "h1 contains 'FIRE Formula'"
+      - verify: "article.blog-article is present"
+      - verify: "a.blog-back-link linking to '/blog/' is present"
+      - verify: "CTA link to Calendly is present"
+
+  - name: "5 Shifts article loads"
+    steps:
+      - navigate: "${base_url}/blog/5-shifts-conscious-entrepreneur/"
+      - verify: "page title contains '5 Shifts'"
+      - verify: "h1 is present"
+      - verify: "a.blog-back-link linking to '/blog/' is present"
+
+  - name: "Taking the Mystery Out of Meditation article loads"
+    steps:
+      - navigate: "${base_url}/blog/taking-the-mystery-out-of-meditation/"
+      - verify: "page title contains 'Meditation'"
+      - verify: "h1 is present"
+      - verify: "a.blog-back-link is present"
+
+  - name: "7 Success Saboteurs article loads"
+    steps:
+      - navigate: "${base_url}/blog/7-success-saboteurs/"
+      - verify: "page title contains 'Saboteurs'"
+      - verify: "h1 is present"
+      - verify: "a.blog-back-link is present"
+
+  - name: "Mastering Meditation article loads"
+    steps:
+      - navigate: "${base_url}/blog/mastering-meditation-with-frequencies/"
+      - verify: "page title contains 'Meditation'"
+      - verify: "h1 is present"
+      - verify: "a.blog-back-link is present"
+
+  - name: "Build Prosperity Consciousness article loads"
+    steps:
+      - navigate: "${base_url}/blog/build-prosperity-consciousness/"
+      - verify: "page title contains 'Prosperity'"
+      - verify: "h1 is present"
+      - verify: "a.blog-back-link is present"
+
+  - name: "Networking Conversation article loads"
+    steps:
+      - navigate: "${base_url}/blog/networking-conversation-follow-up/"
+      - verify: "page title contains 'Networking'"
+      - verify: "h1 is present"
+      - verify: "a.blog-back-link is present"
+
+  - name: "Enlightened Entrepreneurship article loads"
+    steps:
+      - navigate: "${base_url}/blog/enlightened-entrepreneurship-alignment-before-action/"
+      - verify: "page title contains 'Entrepreneurship'"
+      - verify: "h1 is present"
+      - verify: "a.blog-back-link is present"
+
+  - name: "Blog back-link returns to blog index"
+    steps:
+      - navigate: "${base_url}/blog/fire-formula-break-free-from-stuck/"
+      - click: "a.blog-back-link"
+      - verify: "current URL contains '/blog/'"
+      - verify: "div.blog-article-card is visible"
