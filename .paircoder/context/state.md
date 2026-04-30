@@ -78,6 +78,8 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 
 ## What Was Just Done
 
+- **T7.7 done** (auto-updated by hook)
+
 - **T7.6 done** — Added BlogPosting schema to all 8 blog article pages. Schema inserted after `og:type` meta tag, before CSS links. Values pulled verbatim from each page's existing meta/canonical tags. `datePublished: "2026-04-12"` on all articles.
 
 - **T7.5 done** (auto-updated by hook)
@@ -153,11 +155,12 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 - _redirects updated: /webinar_replay and /webinar-replay → YouTube
 - sprint-2 branch merged to master via PR
 - T7.7: Confirmed no fix needed — spiritual coaching page has no hero image; full-site img audit found all images have proper alt text
+- T7.9: DNS cutover complete — carolmerlo.com live on Netlify, HTTPS active, 4 Weebly redirects verified, all key pages 200
 
 
 ## What's Next
 
-1. T7.9: DNS cutover — waiting for Netlify preview URL from Carol
+1. T7.8: Submit sitemap.xml to Google Search Console within 24 hours
 
 
 ## Source Documents for Blog Articles
