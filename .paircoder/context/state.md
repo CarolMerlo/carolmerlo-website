@@ -152,23 +152,13 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 - Mailchimp "Confirmation Thank You Page" updated by Carol to Dropbox meditation MP3 URL
 - _redirects updated: /webinar_replay and /webinar-replay → YouTube
 - sprint-2 branch merged to master via PR
+- T7.7: Confirmed no fix needed — spiritual coaching page has no hero image; full-site img audit found all images have proper alt text
+
 
 ## What's Next
 
-1. **T7.3–T7.7** — Schema additions and alt text fix (P1)
-3. **T7.8–T7.9** — Sitemap + DNS cutover (P2, launch gate)
+1. T7.9: DNS cutover — waiting for Netlify preview URL from Carol
 
-1. ~~**T3.1**~~ — Done ✓
-2. ~~**T3.2**~~ — Done ✓
-3. ~~**T3.3**~~ — Done ✓
-4. ~~**T3.4**~~ — Done ✓
-5. ~~**T3.5**~~ — Done ✓
-6. ~~**T3.6**~~ — Done ✓
-7. ~~**T3.7**~~ — Done ✓
-8. ~~**T3.8**~~ — Done ✓
-
-**Sprint 3 complete — all 8 blog articles published to sprint-3 branch.**
-3. **T1.15** — DNS Cutover (deferred — Carol's decision when ready, needs PageSpeed ≥ 90)
 
 ## Source Documents for Blog Articles
 
