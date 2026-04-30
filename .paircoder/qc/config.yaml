@@ -1,0 +1,19 @@
+default_environment: dev
+
+environments:
+  dev:
+    name: Local Dev (netlify dev)
+    base_url: http://localhost:8888
+    restrictions:
+      read_only: false
+
+  prod:
+    name: Production
+    base_url: https://carolmerlo.com
+    restrictions:
+      read_only: true
+    skip_tags: [destructive, form-submit]
+
+reporting:
+  output_dir: .paircoder/qc/reports
+  format: markdown

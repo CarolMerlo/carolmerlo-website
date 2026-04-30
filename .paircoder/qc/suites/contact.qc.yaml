@@ -1,0 +1,34 @@
+suite: contact
+name: "Contact Form — Render and Submission"
+tags: [smoke, regression]
+description: "Verify the contact form renders correctly. Form submission test runs in dev only."
+environments: [dev, prod]
+
+scenarios:
+
+  - name: "Contact page renders form fields"
+    steps:
+      - navigate: "${base_url}/contact/"
+      - verify: "h1 is present"
+      - verify: "a form with method 'post' is present"
+      - verify: "input[name='name'] is present"
+      - verify: "input[name='email'] is present"
+      - verify: "textarea[name='message'] is present"
+      - verify: "a submit button is present"
+
+  - name: "Contact page has Calendly link"
+    steps:
+      - navigate: "${base_url}/contact/"
+      - verify: "a link to Calendly is present"
+
+  - name: "Contact form submission (dev only)"
+    tags: [form-submit]
+    environments: [dev]
+    steps:
+      - navigate: "${base_url}/contact/"
+      - form_input: { selector: "input[name='name']", value: "QC Test User" }
+      - form_input: { selector: "input[name='email']", value: "qc-test@example.com" }
+      - form_input: { selector: "textarea[name='message']", value: "This is an automated QC test submission. Please ignore." }
+      - click: "button[type='submit']"
+      - verify: "success message or thank-you page is shown"
+      - verify: "no error message is visible"

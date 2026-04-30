@@ -1,0 +1,85 @@
+suite: navigation
+name: "Navigation — All Links and Dropdown"
+tags: [critical, regression]
+description: "Verify the nav bar, dropdown, footer links, and logo all navigate correctly."
+environments: [dev, prod]
+
+scenarios:
+
+  - name: "Nav logo navigates to homepage"
+    steps:
+      - navigate: "${base_url}/about/"
+      - click: "a.nav-logo"
+      - verify: "current URL is '${base_url}/'"
+
+  - name: "Work With Me dropdown shows coaching options"
+    steps:
+      - navigate: "${base_url}/"
+      - click: "button.nav-dropdown-toggle"
+      - verify: "link to '/spiritual-coaching/' is visible"
+      - verify: "link to '/business-coaching/' is visible"
+
+  - name: "Spiritual Coaching nav link works"
+    steps:
+      - navigate: "${base_url}/"
+      - click: "button.nav-dropdown-toggle"
+      - click: "a[href='/spiritual-coaching/']"
+      - verify: "current URL contains '/spiritual-coaching/'"
+      - verify: "h1 is present"
+
+  - name: "Business Coaching nav link works"
+    steps:
+      - navigate: "${base_url}/"
+      - click: "button.nav-dropdown-toggle"
+      - click: "a[href='/business-coaching/']"
+      - verify: "current URL contains '/business-coaching/'"
+      - verify: "h1 is present"
+
+  - name: "Books nav link works"
+    steps:
+      - navigate: "${base_url}/"
+      - click: "a[href='/books/']"
+      - verify: "current URL contains '/books/'"
+
+  - name: "Blog nav link works"
+    steps:
+      - navigate: "${base_url}/"
+      - click: "a[href='/blog/']"
+      - verify: "current URL contains '/blog/'"
+
+  - name: "About nav link works"
+    steps:
+      - navigate: "${base_url}/"
+      - click: "a[href='/about/']"
+      - verify: "current URL contains '/about/'"
+
+  - name: "Contact nav link works"
+    steps:
+      - navigate: "${base_url}/"
+      - click: "a[href='/contact/']"
+      - verify: "current URL contains '/contact/'"
+
+  - name: "Mobile hamburger opens nav menu"
+    steps:
+      - navigate: "${base_url}/"
+      - set_viewport: { width: 375, height: 812 }
+      - click: "button.nav-hamburger"
+      - verify: "ul.nav-menu is visible"
+      - verify: "aria attribute aria-expanded on button.nav-hamburger is 'true'"
+
+  - name: "Footer nav links resolve correctly"
+    steps:
+      - navigate: "${base_url}/"
+      - verify: "footer link to '/' is present"
+      - verify: "footer link to '/books/' is present"
+      - verify: "footer link to '/blog/' is present"
+      - verify: "footer link to '/about/' is present"
+      - verify: "footer link to '/contact/' is present"
+
+  - name: "Footer social links are present"
+    steps:
+      - navigate: "${base_url}/"
+      - verify: "footer link to Facebook (CarolMerloCoaching) is present"
+      - verify: "footer link to LinkedIn is present"
+      - verify: "footer link to YouTube is present"
+      - verify: "footer link to Instagram is present"

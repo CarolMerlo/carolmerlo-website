@@ -1,0 +1,65 @@
+suite: smoke
+name: "Smoke Tests — Core Pages Load"
+tags: [critical, smoke]
+description: "Verify all main pages return 200 and render key content. Run before any deploy."
+environments: [dev, prod]
+
+scenarios:
+
+  - name: "Homepage loads with hero and nav"
+    steps:
+      - navigate: "${base_url}/"
+      - verify: "page title contains 'Carol Merlo'"
+      - verify: "nav logo link 'Carol Merlo' is visible"
+      - verify: "h1 is present on the page"
+      - verify: "section.fire-formula is visible"
+      - verify: "footer is visible"
+
+  - name: "Spiritual Coaching page loads"
+    steps:
+      - navigate: "${base_url}/spiritual-coaching/"
+      - verify: "page title contains 'Spiritual Coaching'"
+      - verify: "h1 is present"
+      - verify: "a link to Calendly insight call is visible"
+
+  - name: "Business Coaching page loads"
+    steps:
+      - navigate: "${base_url}/business-coaching/"
+      - verify: "page title contains 'Coaching'"
+      - verify: "h1 is present"
+      - verify: "a link to Calendly insight call is visible"
+
+  - name: "Books page loads with all 5 books"
+    steps:
+      - navigate: "${base_url}/books/"
+      - verify: "page title contains 'Books'"
+      - verify: "h3 containing 'The FIRE Formula' is visible"
+      - verify: "h3 containing 'Taking the Mystery Out of Meditation' is visible"
+      - verify: "h3 containing 'Create a Happy Life' is visible"
+      - verify: "h3 containing 'Enlightened Entrepreneurship' is visible"
+      - verify: "h3 containing 'The Networking Conversation' is visible"
+
+  - name: "Blog index loads with articles"
+    steps:
+      - navigate: "${base_url}/blog/"
+      - verify: "page title contains 'Blog'"
+      - verify: "at least 8 blog article cards are present"
+      - verify: "link to '/blog/fire-formula-break-free-from-stuck/' is present"
+
+  - name: "About page loads"
+    steps:
+      - navigate: "${base_url}/about/"
+      - verify: "page title contains 'About'"
+      - verify: "h1 is present"
+
+  - name: "Contact page loads"
+    steps:
+      - navigate: "${base_url}/contact/"
+      - verify: "page title contains 'Contact'"
+      - verify: "a contact form is visible"
+
+  - name: "Work With Me page loads"
+    steps:
+      - navigate: "${base_url}/work-with-me/"
+      - verify: "page loads without 404"
+      - verify: "nav is visible"
