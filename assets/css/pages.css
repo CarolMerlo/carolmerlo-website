@@ -385,6 +385,22 @@
   margin-bottom: var(--space-sm);
 }
 
+.wwm-body-wrap {
+  max-width: 780px;
+}
+
+.wwm-photo {
+  text-align: center;
+  margin: 0 auto var(--space-md);
+}
+
+.wwm-photo img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(46, 139, 139, 0.15);
+}
+
 .insight-call-line {
   margin-top: var(--space-lg);
   padding-top: var(--space-md);
