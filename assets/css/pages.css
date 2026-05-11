@@ -391,14 +391,14 @@
 
 .wwm-photo {
   margin: 0 0 var(--space-md);
-  text-align: center;
 }
 
 .wwm-photo img {
-  width: 169px;
+  width: 211px;
   height: auto;
   border-radius: 8px;
   display: block;
+  margin: 0 auto;
 }
 
 .insight-call-line {
