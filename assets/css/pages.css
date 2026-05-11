@@ -1210,3 +1210,47 @@ body.popup-open { overflow: hidden; }
   height: auto;
   display: block;
 }
+
+/* -------------------------------------------------------------
+   RESOURCES PAGE
+   ------------------------------------------------------------- */
+.resources-body {
+  max-width: 760px;
+}
+.resources-body h3 {
+  font-size: 1.2rem;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  color: var(--teal-dark);
+}
+.resources-list {
+  margin: var(--space-sm) 0 var(--space-md) var(--space-md);
+  line-height: 1.8;
+}
+.resource-download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm) var(--space-md);
+  margin-top: var(--space-md);
+}
+.resource-download-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.resource-filename {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+}
+@media (max-width: 600px) {
+  .resource-download {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
