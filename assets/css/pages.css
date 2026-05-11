@@ -390,15 +390,14 @@
 }
 
 .wwm-photo {
-  text-align: center;
-  margin: 0 auto var(--space-md);
+  margin: 0 0 var(--space-md);
 }
 
 .wwm-photo img {
-  max-width: 320px;
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(46, 139, 139, 0.15);
+  display: block;
 }
 
 .insight-call-line {
