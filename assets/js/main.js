@@ -120,12 +120,30 @@ document.addEventListener('DOMContentLoaded', function () {
      ----------------------------------------------------------- */
   var dropdown       = document.querySelector('.nav-dropdown');
   var dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+  var subdropdown       = document.querySelector('.nav-subdropdown');
+  var subdropdownToggle = document.querySelector('.nav-subdropdown-toggle');
+
+  function closeSubdropdown() {
+    if (subdropdown) {
+      subdropdown.classList.remove('nav-subdropdown--open');
+      if (subdropdownToggle) subdropdownToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  if (subdropdown && subdropdownToggle) {
+    subdropdownToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = subdropdown.classList.toggle('nav-subdropdown--open');
+      subdropdownToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
 
   if (dropdown && dropdownToggle) {
     dropdownToggle.addEventListener('click', function (e) {
       e.preventDefault();
       var isOpen = dropdown.classList.toggle('nav-dropdown--open');
       dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+      if (!isOpen) closeSubdropdown();
     });
 
     /* Close when clicking outside */
@@ -133,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!dropdown.contains(e.target)) {
         dropdown.classList.remove('nav-dropdown--open');
         dropdownToggle.setAttribute('aria-expanded', 'false');
+        closeSubdropdown();
       }
     });
 
@@ -141,6 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (e.key === 'Escape') {
         dropdown.classList.remove('nav-dropdown--open');
         dropdownToggle.setAttribute('aria-expanded', 'false');
+        closeSubdropdown();
       }
     });
   }
@@ -170,14 +190,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /* Mark Work With Me link+toggle active when on the page or a sub-page */
-  var dropdownSubLinks = document.querySelectorAll('.nav-dropdown-menu a');
+  var dropdownSubLinks = document.querySelectorAll('.nav-dropdown-menu a, .nav-subdropdown-menu a');
   var toggle = document.querySelector('.nav-dropdown-toggle');
   var dropdownLink = document.querySelector('.nav-dropdown-link');
+  var subdropdownLink = document.querySelector('.nav-subdropdown-link');
   dropdownSubLinks.forEach(function (link) {
     var linkPath = link.getAttribute('href').replace(/\/$/, '');
     if (linkPath === currentPath) {
       if (toggle) toggle.classList.add('active');
       if (dropdownLink) dropdownLink.classList.add('active');
+      /* If active link is inside the subdropdown, also mark EE link active */
+      if (link.closest('.nav-subdropdown-menu') && subdropdownLink) {
+        subdropdownLink.classList.add('active');
+      }
     }
   });
 

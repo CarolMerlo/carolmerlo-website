@@ -160,6 +160,91 @@
 }
 
 /* -------------------------------------------------------------
+   NESTED SUB-DROPDOWN (Resources under Enlightened Entrepreneurship)
+   ------------------------------------------------------------- */
+.nav-subdropdown {
+  position: relative;
+}
+
+.nav-subdropdown-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.nav-subdropdown-link {
+  flex: 1;
+  display: block;
+  padding: 0.6rem var(--space-sm);
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.nav-subdropdown-link:hover,
+.nav-subdropdown-link.active {
+  background-color: var(--teal-light);
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.nav-subdropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-left: 1px solid var(--teal-light);
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.nav-subdropdown-toggle::after {
+  content: '▸';
+  font-size: 0.65rem;
+  transition: transform 0.2s;
+}
+
+.nav-subdropdown.nav-subdropdown--open .nav-subdropdown-toggle::after {
+  transform: rotate(90deg);
+}
+
+.nav-subdropdown-toggle:hover {
+  background-color: var(--teal-light);
+  color: var(--teal);
+}
+
+.nav-subdropdown-menu {
+  display: none;
+  list-style: none;
+  border-left: 3px solid var(--teal-light);
+  margin-left: var(--space-sm);
+  padding: 0.25rem 0;
+}
+
+.nav-subdropdown.nav-subdropdown--open .nav-subdropdown-menu {
+  display: block;
+}
+
+.nav-subdropdown-menu li a {
+  display: block;
+  padding: 0.45rem var(--space-sm);
+  color: var(--text-dark);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-subdropdown-menu li a:hover,
+.nav-subdropdown-menu li a.active {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------
    HAMBURGER BUTTON (mobile only)
    ------------------------------------------------------------- */
 .nav-hamburger {
