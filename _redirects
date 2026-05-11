@@ -2,19 +2,24 @@
 # Core Weebly page redirects are handled in netlify.toml (authoritative source).
 # This file covers additional paths not in netlify.toml.
 
-# Extra business-coaching alias
-/coaching.html                /business-coaching/         301
+# Old coaching alias — now points to Work With Me
+/coaching.html                /work-with-me/              301
 
 # Webinar replay — redirect to YouTube
 /webinar_replay                 https://youtu.be/yP8W3WOSzLQ  301
 /webinar-replay                 https://youtu.be/yP8W3WOSzLQ  301
+/webinar_replay.html            /work-with-me/              301
 
-# Off-brand pages — redirect to homepage
-/health.html                  /                           301
+# Off-brand / old pages — redirect to Work With Me
+/health.html                  /work-with-me/              301
+/lifetracker.html             /work-with-me/              301
+/courses.html                 /work-with-me/              301
+/downloads.html               /work-with-me/              301
+/downloads/                   /work-with-me/              301
+/qifrequency                  /work-with-me/              301
+
+# Other off-brand pages — redirect to homepage
 /superfoods.html              /                           301
-/lifetracker.html             /                           301
-/courses.html                 /                           301
-/downloads.html               /                           301
 /happylife.html               /                           301
 /checkout.html                /pricing/                   301
 /mannatechassociate.html      /                           301
