@@ -469,6 +469,17 @@
 /* -------------------------------------------------------------
    BUSINESS COACHING PAGE
    ------------------------------------------------------------- */
+.bc-hero-image {
+  width: 100%;
+  line-height: 0;
+}
+
+.bc-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .bc-lead {
   font-size: 1.15rem;
   color: var(--text-mid);
