@@ -169,13 +169,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* Mark Work With Me dropdown toggle active when on a sub-page */
+  /* Mark Work With Me link+toggle active when on the page or a sub-page */
   var dropdownSubLinks = document.querySelectorAll('.nav-dropdown-menu a');
   var toggle = document.querySelector('.nav-dropdown-toggle');
+  var dropdownLink = document.querySelector('.nav-dropdown-link');
   dropdownSubLinks.forEach(function (link) {
     var linkPath = link.getAttribute('href').replace(/\/$/, '');
-    if (linkPath === currentPath && toggle) {
-      toggle.classList.add('active');
+    if (linkPath === currentPath) {
+      if (toggle) toggle.classList.add('active');
+      if (dropdownLink) dropdownLink.classList.add('active');
     }
   });
 
