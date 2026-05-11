@@ -391,6 +391,7 @@
 
 .wwm-photo {
   margin: 0 0 var(--space-md);
+  text-align: center;
 }
 
 .wwm-photo img {
