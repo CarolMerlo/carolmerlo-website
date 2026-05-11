@@ -1248,6 +1248,16 @@ body.popup-open { overflow: hidden; }
   font-size: 0.9rem;
   color: var(--text-mid);
 }
+.resource-image {
+  margin: var(--space-md) 0;
+}
+.resource-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--cream-dark);
+}
 @media (max-width: 600px) {
   .resource-download {
     flex-direction: column;
