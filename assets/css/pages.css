@@ -470,7 +470,7 @@
    BUSINESS COACHING PAGE
    ------------------------------------------------------------- */
 .bc-hero-image {
-  width: 100%;
+  padding: 0 var(--space-lg);
   line-height: 0;
 }
 
@@ -478,6 +478,7 @@
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 8px;
 }
 
 .bc-lead {
