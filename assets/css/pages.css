@@ -146,9 +146,13 @@
   gap: var(--space-lg);
 }
 
+.why-stalls-image {
+  display: flex;
+}
+
 .why-stalls-image img {
   width: 100%;
-  aspect-ratio: 5 / 4;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
