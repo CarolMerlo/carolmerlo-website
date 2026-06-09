@@ -27,7 +27,7 @@ Sprint 8: Pricing page and coaching page content updates. Updating investment op
 | ID | Title | Status | Priority |
 |----|-------|--------|----------|
 | T8.1 | Pricing page: hero text, What's Included, investment cards/buttons/links | done ✓ | P0 |
-| T8.2 | Business Coaching page: replace book image with 1800×2700 portrait version | pending — needs image from Carol | P0 |
+| T8.2 | Business Coaching page: replace book image with 1800×2700 portrait version | done ✓ | P0 |
 
 ### Sprint 7 — SEO Remediation & Launch Readiness
 
@@ -86,6 +86,8 @@ Sprint 8: Pricing page and coaching page content updates. Updating investment op
 - Phase 4: Stripe payments, meditation audio library, testimonial submission form
 
 ## What Was Just Done
+
+- **T8.2 done** — Business Coaching page book image replaced with portrait version (1800×2700 JPG, compressed to 514 KB). HTML src updated to book-enlightened-entrepreneurship-cover.jpg, width/height set to 1800×2700 for correct aspect ratio hint. CSS already constrains display to 280px wide.
 
 - **T8.1 done** — Pricing page updates: hero text changed from "Live group coaching..." to "Live coaching..."; What's Included list updated to remove "group"; investment grid changed from 2 to 3 columns; Pay in Full button updated to Calendly pay-in-full link; 2-Month Payment Plan button updated to bi-monthly Calendly link; One Hour Coaching Session card added at $150 with 1-hr-coaching Calendly link; all buttons changed from "Apply Now" to "Schedule and Pay Now". CSS grid updated to repeat(3, 1fr) with max-width 1000px.
 
@@ -176,7 +178,7 @@ Sprint 8: Pricing page and coaching page content updates. Updating investment op
 
 ## What's Next
 
-1. T8.2: Carol to provide 1800×2700 portrait book cover image for business-coaching page — then I update the HTML
+1. Sprint 8 complete — all tasks done. Ready for PR and review.
 
 
 ## Source Documents for Blog Articles
