@@ -1,14 +1,16 @@
 # Current State
 
-> Last updated: 2026-04-18 (Sprint 7 planning)
+> Last updated: 2026-06-09 (Sprint 8 in progress)
 
 ## Active Plan
 
-**Plan:** plan-2026-04-sprint-7-seo-launch
-**Title:** Sprint 7: SEO Remediation & Launch Readiness
-**Status:** Planning
-**Current Sprint:** Sprint 7
-**Branch:** sprint-7-seo-launch
+**Plan:** plan-2026-06-sprint-8-pricing-coaching-updates
+**Title:** Sprint 8: Pricing & Coaching Page Updates
+**Status:** In Progress
+**Current Sprint:** Sprint 8
+**Branch:** sprint-8-pricing-coaching-updates
+
+**Previous Plan:** plan-2026-04-sprint-7-seo-launch (Sprint 7 — complete ✓)
 
 **Previous Plan:** plan-2026-04-sprint-6-images-video (Sprint 6 — complete ✓)
 
@@ -16,9 +18,16 @@
 
 ## Current Focus
 
-Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must complete before DNS cutover. P1 tasks complete within one week of launch. P2 tasks are the launch sequence itself.
+Sprint 8: Pricing page and coaching page content updates. Updating investment options, Calendly links, button text, hero copy, and fixing the book image on the business coaching page.
 
 ## Task Status
+
+### Sprint 8 — Pricing & Coaching Page Updates
+
+| ID | Title | Status | Priority |
+|----|-------|--------|----------|
+| T8.1 | Pricing page: hero text, What's Included, investment cards/buttons/links | done ✓ | P0 |
+| T8.2 | Business Coaching page: replace book image with 1800×2700 portrait version | done ✓ | P0 |
 
 ### Sprint 7 — SEO Remediation & Launch Readiness
 
@@ -77,6 +86,10 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 - Phase 4: Stripe payments, meditation audio library, testimonial submission form
 
 ## What Was Just Done
+
+- **T8.2 done** — Business Coaching page book image replaced with portrait version (1800×2700 JPG, compressed to 514 KB). HTML src updated to book-enlightened-entrepreneurship-cover.jpg, width/height set to 1800×2700 for correct aspect ratio hint. CSS already constrains display to 280px wide.
+
+- **T8.1 done** — Pricing page updates: hero text changed from "Live group coaching..." to "Live coaching..."; What's Included list updated to remove "group"; investment grid changed from 2 to 3 columns; Pay in Full button updated to Calendly pay-in-full link; 2-Month Payment Plan button updated to bi-monthly Calendly link; One Hour Coaching Session card added at $150 with 1-hr-coaching Calendly link; all buttons changed from "Apply Now" to "Schedule and Pay Now". CSS grid updated to repeat(3, 1fr) with max-width 1000px.
 
 - **T7.8 done** (auto-updated by hook)
 
@@ -165,7 +178,7 @@ Sprint 7: SEO remediation and launch readiness. P0 tasks (T7.1, T7.2) must compl
 
 ## What's Next
 
-1. Sprint 7 complete — all tasks done
+1. Sprint 8 complete — all tasks done. Ready for PR and review.
 
 
 ## Source Documents for Blog Articles
