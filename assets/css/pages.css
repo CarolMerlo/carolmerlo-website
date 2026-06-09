@@ -561,6 +561,10 @@
   align-items: center;
 }
 
+.bc-book-image {
+  padding: var(--space-lg) 0;
+}
+
 .bc-book-image img {
   width: 100%;
   border-radius: 8px;
